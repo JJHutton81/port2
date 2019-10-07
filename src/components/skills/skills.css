@@ -1,0 +1,194 @@
+.SkillBody {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(161, 181, 202);
+  overflow: hidden;
+}
+
+.page-wrap {
+    margin-top: 7%;
+}
+
+.skillsFX {
+  width: 30%;
+  float: right;
+  margin: 6%;
+  position: absolute;
+}
+
+.CardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardWrapper1-5 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(161, 181, 202);
+  position: relative;
+  right: 6.5%;
+}
+
+.CardWrapper6-10 {
+  width: 100%;
+  margin-top: 1%;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(161, 181, 202);
+  position: relative;
+  right: 6.5%;
+}
+
+.SkillCard {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0% 3%;
+  border-radius: 8px;
+  border-top: 7px double #001f3f;
+  border-bottom: 7px double #001f3f;
+  z-index: 1;
+  background-color: wheat;
+  overflow: hidden;
+  width: 25ch;
+  height: 30ch;
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+
+.SkillCard::after {
+  content: '';
+  z-index: -1;
+  background-color: hsla(0, 0%, 100%, 0.397);
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  width: 3.25em;
+  transform: translateX(-1700%) rotate(-35deg);
+}
+
+.SkillCard:hover::after {
+  transition: transform 1.5s ease-in-out;
+  transform: translateX(1700%) rotate(35deg);
+}
+
+.SkillTag {
+  font-family: 'Stylish', sans-serif;
+  margin: 1.5%;
+  font-size: 1.5rem;
+  color: #001f3f;
+}
+
+.SkillTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SkillCardBack {
+  margin: 0 10px;
+  color: #001f3f;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.drag {
+  width: 100%;
+  height: auto;
+}
+
+.cardButton {
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: wheat;
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5% 2.5%;
+  text-decoration: none;
+  animation: buttonPulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+
+.skills-deck-wrap {
+  width: 100%;
+  height: 75.1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.Deck {
+  position: absolute;
+  width: 99vw;
+  height: 70vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardImage {
+  background-color: white;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 75%;
+  max-width: 300px;
+  height: 85vh;
+  max-height: 570px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+.inst-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.instructions {
+  text-align: center;
+  background-color: #001f3f;
+  color: wheat;
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/* h1 {
+    text-align: center;
+    position: absolute
+  } */
+
+@media only screen and (max-width: 812px) {
+  .CardImage {
+    height: 65vh;
+    /* width: 80%; */
+  }
+
+  .skills-deck-wrap {
+    height: 68.5vh;
+  }
+  /*
+    .Deck {
+      height: 80vh;
+      width: 90%;
+    } */
+}

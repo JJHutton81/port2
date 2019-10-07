@@ -5,7 +5,6 @@ import './about_me.css';
 import HeadGrapix from '../../media/headerGraphic.png';
 import About from '../../media/aboutMeGraphic.png';
 import Headshot from '../../media/headshot.jpg';
-import Accent from '../../media/tileAccentLeft.png';
 
 export default class AboutMe extends Component {
   render() {

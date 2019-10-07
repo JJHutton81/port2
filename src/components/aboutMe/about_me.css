@@ -11,7 +11,7 @@
 .aboutFX {
   width: 30%;
   float: left;
-  margin-left: 1%;
+  margin: 6% 0 3% 6%;
 }
 
 .spaceNeedleHolder {
@@ -25,7 +25,7 @@
   display: flex;
   /* border: 1px solid black; */
   width: 80%;
-  margin: 16% 0% 5% 6%;
+  margin: 16% auto;
   background-color: white;
 }
 

@@ -108,6 +108,7 @@ section {
 body {
   /* font-size 16px; */
   font-size: 62.5%; /*16 x.625 = 10*/
+  overflow-x: hidden;
 }
 ol,
 ul {
