@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7%;
+  margin-top: 12%;
   text-align: center;
 }
 
@@ -51,6 +51,7 @@
   font-size: 1rem;
   border-style: inset;
   border: 2px solid #001f3f;
+  margin-top: 3%;
 }
 
 .form-text {
@@ -65,11 +66,18 @@
   border: 2px solid #001f3f;
 }
 
+.btnWrap {
+  display: flex;
+  margin: 2%;
+  width: 30%;
+  justify-content: space-between;
+}
+
 .Btn {
   position: relative;
   font-size: 1.5rem;
   font-family: 'Righteous', cursive;
-  margin-top: 1.5%;
+  margin: 1%;
   cursor: pointer;
   background: none;
   border: none;

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3%;
+  margin: 0 3% 3% 3%;
   padding: 2%;
   background-color: white;
 
@@ -30,7 +30,7 @@
   font-family: 'Righteous', cursive;
   font-size: 1.5rem;
   color: #001f3f;
-  margin: 3% 1%;
+  margin: 1%;
   text-align: center;
 }
 
@@ -130,7 +130,6 @@ span::after {
   justify-content: center;
   border-top: 7px double black;
   border-bottom: 7px double black;
-  margin-top: 4%;
   padding: 6% 0%;
 }
 
@@ -214,7 +213,6 @@ span::after {
   justify-content: center;
   border-top: 7px double black;
   border-bottom: 7px double black;
-  margin-top: 4%;
   padding: 6% 0%;
   line-height: 1.5rem;
 }
@@ -226,7 +224,6 @@ span::after {
   align-items: center;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 0%;
   border-right: 2px solid black;
   margin-right: 1.5px;
 }
@@ -238,7 +235,6 @@ span::after {
   align-items: center;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 0%;
   border-left: 2px solid black;
   margin-left: 1.5px;
 }

@@ -52,12 +52,14 @@ export default class Contact extends Component {
               wrap='soft'
               className='form-text'
             />
-            <button type='submit' className='Btn'>
-              Submit
-            </button>
-            <span className='PsudoButt' onClick={this.toggleBackContact}>
-              Close
-            </span>
+            <div className='btnWrap'>
+              <button type='submit' className='Btn'>
+                Submit
+              </button>
+              <span className='Btn' onClick={this.toggleBackContact}>
+                Close
+              </span>
+            </div>
           </form>
         </animated.div>
       )
@@ -65,7 +67,7 @@ export default class Contact extends Component {
     return (
       <div className='ContactBody'>
         <div className='title'>
-          <img className="contact_FX" src={ContactGrapfix} alt='Logo'></img>
+          <img className='contact_FX' src={ContactGrapfix} alt='Logo'></img>
         </div>
 
         <Spring
@@ -88,7 +90,7 @@ export default class Contact extends Component {
             </div>
           )}
         </Spring>
-        <img className="footer" src={Foot} alt="Logo"></img>
+        <img className='footer' src={Foot} alt='Logo'></img>
       </div>
     );
   }
