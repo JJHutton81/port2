@@ -1,6 +1,7 @@
 .aboutMeBody {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .headImg {
@@ -15,10 +16,18 @@
 }
 
 .spaceNeedleHolder {
-  background: url(../../media/spaceNeedle.png) center no-repeat;
   background-size: contain;
   height: 500px;
   width: 99.8%;
+  position: absolute;
+  margin-top: 7%;
+}
+
+.needle {
+  width: 15%;
+  height: 500px;
+  margin-left: 6.5%;
+  position: absolute;
 }
 
 .aboutHeadText {

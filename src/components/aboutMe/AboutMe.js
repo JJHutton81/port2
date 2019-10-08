@@ -5,6 +5,7 @@ import './about_me.css';
 import HeadGrapix from '../../media/headerGraphic.png';
 import About from '../../media/aboutMeGraphic.png';
 import Headshot from '../../media/headshot.jpg';
+import Needle from '../../media/spaceNeedle.png';
 
 export default class AboutMe extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class AboutMe extends Component {
         <img className='headImg' src={HeadGrapix} alt='Logo' />
         <div className='spaceNeedleHolder'>
           <img className='aboutFX' src={About} alt='Logo' />
+          <img className='needle' src={Needle} alt='Space Needle' />
           <div className='aboutHeadText'>
             <img
               // className='head'

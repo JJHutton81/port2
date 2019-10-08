@@ -3,7 +3,6 @@ import scrollToComponent from 'react-scroll-to-component';
 
 import Landing from './components/landing/Landing';
 import AboutMe from './components/aboutMe/AboutMe';
-import Menu from './components/menu/Menu';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
@@ -27,13 +26,53 @@ export default class App extends Component {
           ref={section => {
             this.Landing = section;
           }}>
-          <Landing />
+          {/* <Landing /> */}
         </section>
         <div className='menu'>
-          <h1 onClick={() => scrollToComponent(this.AboutMe,  { offset: 0, align: 'top', duration: 1500})}>About Me</h1>
-          <h1 onClick={() => scrollToComponent(this.Skills,  { offset: 0, align: 'top', duration: 1500})}>Skills</h1>
-          <h1 onClick={() => scrollToComponent(this.Projects,  { offset: 0, align: 'top', duration: 1500})}>Projects</h1>
-          <h1 onClick={() => scrollToComponent(this.Contact,  { offset: 0, align: 'top', duration: 1500})}>Contact</h1>
+          <h1
+            className='PsudoButt'
+            onClick={() =>
+              scrollToComponent(this.AboutMe, {
+                offset: 0,
+                align: 'top',
+                duration: 1500
+              })
+            }>
+            About Me
+          </h1>
+          <h1
+            className='PsudoButt'
+            onClick={() =>
+              scrollToComponent(this.Skills, {
+                offset: 0,
+                align: 'top',
+                duration: 1500
+              })
+            }>
+            Skills
+          </h1>
+          <h1
+            className='PsudoButt'
+            onClick={() =>
+              scrollToComponent(this.Projects, {
+                offset: 0,
+                align: 'top',
+                duration: 1500
+              })
+            }>
+            Projects
+          </h1>
+          <h1
+            className='PsudoButt'
+            onClick={() =>
+              scrollToComponent(this.Contact, {
+                offset: 0,
+                align: 'top',
+                duration: 1500
+              })
+            }>
+            Contact
+          </h1>
         </div>
         <section
           className='aboutMe'
