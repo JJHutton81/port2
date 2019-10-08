@@ -3,6 +3,12 @@
   width: 100%;
 }
 
+.project_FX {
+    width: 30%;
+    float: left;
+    margin: 6% 0 3% 6%;
+  }
+
 .cardContainer {
   display: flex;
   flex-wrap: wrap;

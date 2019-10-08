@@ -5,8 +5,11 @@ import "./menu.css";
 export default class AboutMe extends Component {
     render() {
         return(
-            <div>
-                <h1>Place holder</h1>
+            <div className="menu">
+                <h1>About Me</h1>
+                <h1>Skills</h1>
+                <h1>Projects</h1>
+                <h1>Contact</h1>
             </div>
         )
     }
