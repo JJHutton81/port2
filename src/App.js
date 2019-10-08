@@ -5,6 +5,7 @@ import AboutMe from './components/aboutMe/AboutMe';
 import Menu from "./components/menu/Menu";
 import Skills from "./components/skills/Skills";
 import Contact from './components/contact/Contact';
+import Projects from './components/projects/Projects';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
       <Menu />
       <AboutMe />
       <Skills />
+      <Projects />
       <Contact />
     </div>
   );

@@ -1,0 +1,255 @@
+.JOBDcard {
+  position: absolute;
+  width: 40%;
+  height: 47vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3%;
+  padding: 2%;
+  background-color: wheat;
+  border-radius: 8px;
+  border-top: 7px double #001f3f;
+  border-bottom: 7px double #001f3f;
+}
+
+.CardClick {
+  display: flex;
+  justify-content: center;
+}
+
+.CTextWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+
+.CTitle {
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem;
+  color: #001f3f;
+  margin: 3% 1%;
+  text-align: center;
+}
+
+.CText {
+  font-family: 'Righteous', cursive;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: initial;
+  color: #001f3f;
+  margin: 1%;
+  padding: 0 1.5%;
+}
+
+.JOBD {
+  width: 80%;
+  height: 40vh;
+}
+
+.BigPopWrap {
+  width: 47vw;
+}
+
+.BigPop {
+  width: 45vw;
+  height: 67.5vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1%;
+  background-color: wheat;
+  border-radius: 8px;
+  border-top: 7px double #001f3f;
+  border-bottom: 7px double #001f3f;
+  z-index: 1;
+  overflow: auto;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5%;
+  margin: 1%;
+}
+
+.PsudoButt {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: 'Righteous', cursive;
+  margin-top: 1.5%;
+  cursor: pointer;
+}
+
+.PsudoButt::before,
+span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ff4136;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.PsudoButt::before {
+  top: 0;
+  transform-origin: center right;
+}
+
+.PsudoButt:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+.PsudoButt::after {
+  bottom: 0;
+  transform-origin: center left;
+}
+
+.PsudoButt:hover::after {
+  transform-origin: center right;
+  transform: scaleX(1);
+}
+
+.NLogo {
+  width: 100px;
+  height: 50px;
+}
+
+.HLogo {
+  width: 120px;
+  height: 70px;
+}
+
+.BigPopMidWrap {
+  width: 95%;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  border-top: 7px double black;
+  border-bottom: 7px double black;
+  margin-top: 4%;
+  padding: 6% 0%;
+}
+
+.DepCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid black;
+  margin-right: 1.5px;
+  padding-right: 1%;
+}
+
+.DepCardNTA {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 7px double black;
+  border-bottom: 7px double black;
+  margin-right: 1.5px;
+  padding-right: 1%;
+}
+
+.DepNTATitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.DepNTABodyLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid black;
+  margin-right: 1.5px;
+  padding-right: 1%;
+}
+
+.DepNTABodyRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 2px solid black;
+  margin-left: 1.5px;
+  padding-left: 1%;
+}
+
+.DepNTABody {
+  width: 100%;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.DevCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 2px solid black;
+  margin-left: 1.5px;
+  padding-left: 1%;
+}
+
+.Cat {
+  width: 20px;
+  height: 20px;
+}
+
+.GHLogo {
+  width: 60px;
+  height: 20px;
+}
+
+.LinkCard {
+  width: 95%;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  border-top: 7px double black;
+  border-bottom: 7px double black;
+  margin-top: 4%;
+  padding: 6% 0%;
+  line-height: 1.5rem;
+}
+
+.MiniCardBody1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0%;
+  border-right: 2px solid black;
+  margin-right: 1.5px;
+}
+
+.MiniCardBody2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0%;
+  border-left: 2px solid black;
+  margin-left: 1.5px;
+}
+
+.JLink {
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+}
