@@ -7,13 +7,32 @@
 
 .page-wrap {
     margin-top: 7%;
+    height: 100vh;
 }
 
 .skillsFX {
   width: 30%;
   float: right;
-  margin: 6%;
+  margin: 8% 0 0 66%;
   position: absolute;
+}
+
+.skillText {
+  position: absolute;
+  margin: 20% 0 0 5%;
+  width: 30%;
+}
+
+.skillText p {
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skillText h2 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .CardBody {
@@ -139,6 +158,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .CardImage {
