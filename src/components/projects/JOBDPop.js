@@ -16,50 +16,73 @@ export default class JOBDPop extends Component {
   state = { index: 0 };
   toggle = e =>
     this.setState(state => ({
-      index: state.index === 2 ? 0 : state.index + 1
+      index: state.index === 1 ? 0 : state.index + 1
     }));
-  toggleBack = e =>
-    this.setState(state => ({
-      index: state.index === 2 ? 1 : state.index - 1
-    }));
-  toggleClose = e =>
-    this.setState(state => ({
-      index: state.index !== 0 ? 0 : state.index === 0
-    }));
+  // toggleBack = e =>
+  //   this.setState(state => ({
+  //     index: state.index === 1 ? 1 : state.index - 1
+  //   }));
+  // toggleClose = e =>
+  //   this.setState(state => ({
+  //     index: state.index !== 0 ? 0 : state.index === 0
+  //   }));
   render() {
     const pages = [
       style => (
         <animated.div style={{ ...style }} className='JOBDcard'>
-          <h2 className='CTitle'>Capstone Project</h2>
-          <img
-            className='JOBD'
-            src={JOBDThumb}
-            alt='Thumbnail of Lab Project'
-          />
-          <span className='PsudoButt' onClick={this.toggle}>
+          <div className='img-link-text-wrap'>
+            <div>
+              <a
+                className='JLink'
+                href='https://joinourbigday.netlify.com'
+                target='_blank'
+                rel='noopener noreferrer'>
+                <img
+                  className='JOBD'
+                  src={JOBDThumb}
+                  alt='Thumbnail of Lab Project'
+                />
+              </a>
+              {/* <span className='PsudoButt' onClick={this.toggle}>
             Learn More
-          </span>
+          </span> */}
+            </div>
+            <div>
+              <h2 className='CTitle'>Capstone Project</h2>
+              <h2 className='CText'>
+                This is my Capstone project while attending Lambda School. This
+                app helps consumers handle their wedding guest list digitally,
+                simplifying the RSVP process, by allowing people to handle it
+                digitally. There are several other features that incentivize the
+                consumer to use the app over traditional wedding invitations, or
+                in conjunction with them.
+              </h2>
+            </div>
+          </div>
+          <button className='PsudoButt' onClick={this.toggle}>
+            <span>Learn More</span>
+          </button>
         </animated.div>
       ),
-      style => (
-        <animated.div style={{ ...style }} className='JOBDcard'>
-          <h1 className='CTitle'>We take the hitch out of getting hitched.</h1>
-          <h2 className='CText'>
-            This is my Capstone project while attending Lambda School. This app
-            helps consumers handle their wedding guest list digitally,
-            simplifying the RSVP process, by allowing people to handle it
-            digitally. There are several other features that incentivize the
-            consumer to use the app over traditional wedding invitations, or in
-            conjunction with them.
-          </h2>
-          <span className='PsudoButt' onClick={this.toggle}>
-            Learn Even More
-          </span>
-          <span className='PsudoButt' onClick={this.toggleClose}>
-            Close
-          </span>
-        </animated.div>
-      ),
+      // style => (
+      //   <animated.div style={{ ...style }} className='JOBDcard'>
+      //     <h1 className='CTitle'>We take the hitch out of getting hitched.</h1>
+      //     <h2 className='CText'>
+      //       This is my Capstone project while attending Lambda School. This app
+      //       helps consumers handle their wedding guest list digitally,
+      //       simplifying the RSVP process, by allowing people to handle it
+      //       digitally. There are several other features that incentivize the
+      //       consumer to use the app over traditional wedding invitations, or in
+      //       conjunction with them.
+      //     </h2>
+      //     <span className='PsudoButt' onClick={this.toggle}>
+      //       Learn Even More
+      //     </span>
+      //     <span className='PsudoButt' onClick={this.toggleClose}>
+      //       Close
+      //     </span>
+      //   </animated.div>
+      // ),
       style => (
         <animated.div style={{ ...style }} className='BigPop'>
           {/* <JOBDCarousel /> */}
@@ -99,7 +122,7 @@ export default class JOBDPop extends Component {
                 <h2 className='CText'>Joseph Mercado</h2>
               </div>
             </div>
-            <JOBDCarousel />
+            {/* <JOBDCarousel /> */}
             <div className='LinkCard'>
               <div className='MiniCardBody1'>
                 <a
@@ -116,9 +139,9 @@ export default class JOBDPop extends Component {
                   rel='noopener noreferrer'>
                   <span className='PsudoButt'>Back-End Readme</span>
                 </a>
-                <span className='PsudoButt' onClick={this.toggleBack}>
+                {/* <span className='PsudoButt' onClick={this.toggleBack}>
                   Go Back
-                </span>
+                </span> */}
               </div>
               <div className='MiniCardBody2'>
                 <a
@@ -138,11 +161,14 @@ export default class JOBDPop extends Component {
                   rel='noopener noreferrer'>
                   <span className='PsudoButt'>Go To App</span>
                 </a>
-                <span className='PsudoButt' onClick={this.toggleClose}>
+                {/* <span className='PsudoButt' onClick={this.toggle}>
                   Close
-                </span>
+                </span> */}
               </div>
             </div>
+            <button className='PsudoButt' onClick={this.toggle}>
+              <span>Close</span>
+            </button>
           </div>
         </animated.div>
       )

@@ -1,15 +1,18 @@
 .JOBDcard {
-  position: absolute;
-  width: 40%;
+  /* position: absolute;
+  width: 40%; */
   height: 47vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 3% 3% 3%;
+  /* margin: 0 3% 3% 3%; */
   padding: 2%;
   background-color: white;
 
+}
+.img-link-text-wrap {
+  display: flex;
 }
 
 .CardClick {
@@ -28,7 +31,8 @@
 
 .CTitle {
   font-family: 'Righteous', cursive;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
   color: #001f3f;
   margin: 1%;
   text-align: center;
@@ -36,32 +40,28 @@
 
 .CText {
   font-family: 'Righteous', cursive;
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-align: justify;
   line-height: initial;
   color: #001f3f;
   margin: 1%;
-  padding: 0 1.5%;
+  padding: 2%;
 }
 
 .JOBD {
-  width: 80%;
+  width: 100%;
   height: 40vh;
 }
 
-.BigPopWrap {
-  width: 47vw;
-}
-
 .BigPop {
-  width: 45vw;
-  height: 67.5vh;
+  width: 90vw;
+  height: 55vh;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 1%;
+  /* margin: 1%; */
   background-color: white;
   z-index: 1;
   overflow: auto;
@@ -125,11 +125,11 @@ span::after {
 
 .BigPopMidWrap {
   width: 95%;
-  margin: 3%;
+  margin: 3% 3% 0 3%;
   display: flex;
   justify-content: center;
   border-top: 7px double black;
-  border-bottom: 7px double black;
+  
   padding: 6% 0%;
 }
 
@@ -240,7 +240,8 @@ span::after {
 }
 
 .JLink {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: red;
   color: black;
   padding: 1%;
 }

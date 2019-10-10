@@ -13,44 +13,61 @@ export default class NTAPop extends Component {
   state = { index: 0 };
   toggleNTA = e =>
     this.setState(state => ({
-      index: state.index === 2 ? 0 : state.index + 1
+      index: state.index === 1 ? 0 : state.index + 1
     }));
-  toggleBackNTA = e =>
-    this.setState(state => ({
-      index: state.index === 2 ? 1 : state.index - 1
-    }));
-  toggleCloseNTA = e =>
-    this.setState(state => ({
-      index: state.index !== 0 ? 0 : state.index === 0
-    }));
+  // toggleBackNTA = e =>
+  //   this.setState(state => ({
+  //     index: state.index === 2 ? 1 : state.index - 1
+  //   }));
+  // toggleCloseNTA = e =>
+  //   this.setState(state => ({
+  //     index: state.index !== 0 ? 0 : state.index === 0
+  //   }));
   render() {
     const pages = [
+      // style => (
+      //   <animated.div style={{ ...style }} className='JOBDcard'>
+      //     <h2 className='CTitle'>Note Keeping App</h2>
+      //     <img className='JOBD' src={Note} alt='Thumbnail of Lab Project' />
+      //     <span className='PsudoButt' onClick={this.toggleNTA}>
+      //       Learn More
+      //     </span>
+      //   </animated.div>
+      // ),
       style => (
         <animated.div style={{ ...style }} className='JOBDcard'>
-          <h2 className='CTitle'>Note Keeping App</h2>
-          <img className='JOBD' src={Note} alt='Thumbnail of Lab Project' />
-          <span className='PsudoButt' onClick={this.toggleNTA}>
-            Learn More
-          </span>
-        </animated.div>
-      ),
-      style => (
-        <animated.div style={{ ...style }} className='JOBDcard'>
-          <h1 className='CTitle'>Note Keeping App</h1>
-          <h2 className='CText'>
-            This app was the combination of two seperate build weeks at Lambda
-            School, the front-end build week, and the back-end.
-          </h2>
-          <h2 className='CText'>
-            The App Allows you to create, edit, and delete text based notes,
-            which are stored on a server.
-          </h2>
-          <span className='PsudoButt' onClick={this.toggleNTA}>
-            Learn Even More
-          </span>
-          <span className='PsudoButt' onClick={this.toggleCloseNTA}>
-            Close
-          </span>
+          <div className='img-link-text-wrap'>
+            <div>
+              <h1 className='CTitle'>Note Keeping App</h1>
+              <h2 className='CText'>
+                This app was the combination of two seperate build weeks at
+                Lambda School, the front-end build week, and the back-end.
+              </h2>
+              <h2 className='CText'>
+                The App Allows you to create, edit, and delete text based notes,
+                which are stored on a server.
+              </h2>
+            </div>
+            <div>
+              <a
+                className='JLink'
+                href='https://basicnoteapp.netlify.com'
+                target='_blank'
+                rel='noopener noreferrer'>
+                <img
+                  className='JOBD'
+                  src={Note}
+                  alt='Thumbnail of Lab Project'
+                />
+              </a>
+              {/* <span className='PsudoButt' onClick={this.toggleNTA}>
+                Learn More
+              </span> */}
+            </div>
+          </div>
+          <button className='PsudoButt' onClick={this.toggleNTA}>
+            <span>Learn More</span>
+          </button>
         </animated.div>
       ),
       style => (
@@ -99,12 +116,9 @@ export default class NTAPop extends Component {
               <img className='GHLogo' src={GitHub} alt='' />
             </span>
           </a>
-          <span className='PsudoButt' onClick={this.toggleBackNTA}>
-            Go Back
-          </span>
-          <span className='PsudoButt' onClick={this.toggleCloseNTA}>
-            Close
-          </span>
+          <button className='PsudoButt' onClick={this.toggleNTA}>
+            <span>Close</span>
+          </button>
         </animated.div>
       )
     ];

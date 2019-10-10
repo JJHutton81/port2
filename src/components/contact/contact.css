@@ -70,7 +70,7 @@
   display: flex;
   margin: 2%;
   width: 30%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .Btn {
@@ -79,8 +79,6 @@
   font-family: 'Righteous', cursive;
   margin: 1%;
   cursor: pointer;
-  background: none;
-  border: none;
 }
 
 .Btn::before,
