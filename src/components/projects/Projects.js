@@ -1,26 +1,69 @@
-import React, { Component } from 'react';
-// import { Spring } from "react-spring/renderprops";
+import React, { Component } from "react";
 
-import './projects.css';
+import Tabs from "./Tabs";
+import Cards from "./Cards";
 
-import ProjectsGraphix from '../../media/projectsGraphic.png';
+import styled from "styled-components";
 
-import JOBDPop from './JOBDPop';
-import NTAPop from './NTAPop';
+import ProjectsGraphix from "../../media/projectsGraphic.png";
+import { tabData, cardData } from "../../ProjectData";
 
-export default class HomeBody extends Component {
+export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: "all",
+      tabs: [],
+      cards: []
+    };
+  }
+
+  componentDidMount() {
+    this.setState({ tabs: tabData, cards: cardData });
+  }
+
+  changeSelected = tab => {
+    this.setState({ selected: tab });
+  };
+
+  filterCards = () => {
+    if (this.state.selected === "all") {
+      return this.state.cards;
+    } else {
+      const cards = this.state.cards.filter(
+        card => card.tab === this.state.selected
+      );
+      return cards;
+    }
+  };
+
   render() {
     return (
-      <div className='title'>
-        <img className="project_FX" src={ProjectsGraphix} alt="Logo"/>
-
-        <div class='cardWrapper'>
-          <div className='cardContainer'>
-            <JOBDPop />
-            <NTAPop />
-          </div>
+      <ProjectContainer>
+        <div>
+          <Image src={ProjectsGraphix} alt="Logo" />
         </div>
-      </div>
+        <div>
+          <Tabs
+            tabs={this.state.tabs}
+            selectedTab={this.state.selected}
+            selectTabHandler={this.changeSelected}
+          />
+          <Cards cards={this.filterCards()} />
+        </div>
+      </ProjectContainer>
     );
   }
 }
+
+const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
+const Image = styled.img`
+  width: 30%;
+  float: left;
+  margin: 6% 0 0% 6%;
+`;

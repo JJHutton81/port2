@@ -1,0 +1,13 @@
+.tabs {
+    margin-top: 5%;
+}
+
+.topics {
+    display: flex;
+}
+
+.title {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
