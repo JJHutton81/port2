@@ -26,7 +26,7 @@ export default class App extends Component {
           ref={section => {
             this.Landing = section;
           }}>
-          {/* <Landing /> */}
+          <Landing />
         </section>
         <div className='menu'>
           <h1
