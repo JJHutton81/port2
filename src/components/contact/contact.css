@@ -116,4 +116,5 @@ button::after {
 .footer {
   position: absolute;
   z-index: -1;
+  background-size: contain;
 }

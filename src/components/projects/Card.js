@@ -21,7 +21,7 @@ const Card = props => {
         position="bottom center"
         closeOnDocumentClick
       >
-        <H3>By {props.card.text}</H3>
+        <H3>{props.card.text}</H3>
         <A href={props.card.rlink} target="_blank" rel="noopener noreferrer">
           <Logo className="GHLogo" src={GitHub} alt="Git Hub Logo" />
         </A>

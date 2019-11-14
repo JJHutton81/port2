@@ -1,8 +1,8 @@
-export const tabData = ["All", "React", "Redux", "API"];
+export const tabData = ["All", "React", "Redux", "API", "JavaScript"];
 
 export const cardData = [
   {
-    headline: "Capstone Project",
+    headline: "Join Our Big Day",
     tab: "Redux",
     img: "./assets/jobdthumb.png",
     plink: "https://joinourbigday.netlify.com",
@@ -18,5 +18,37 @@ export const cardData = [
     rlink: "https://github.com/FreeKeyBoy/front-end-project-week",
     text:
       "This note keeping app is the combination of my front-end, and back-end web development training."
+  },
+  {
+    headline: "Instagram Clone",
+    tab: "React",
+    img: "./assets/instaclone.jpg",
+    plink: "",
+    rlink: "",
+    text: "",
+  },
+  {
+    headline: "React Sorting Project",
+    tab: "React",
+    img: "./assets/lambdatimes.jpg",
+    plink: "",
+    rlink: "",
+    text: "",
+  },
+  {
+    headline: "JavaScript UI Project",
+    tab: "JavaScript",
+    img: "/assets/newsfeed.jpg",
+    plink: "",
+    rlink: "",
+    text: "",
+  },
+  {
+    headline: "State Management",
+    tab: "React",
+    img: "/assets/tabs.jpg",
+    plink: "",
+    rlink: "",
+    text: "",
   }
 ];

@@ -5,7 +5,7 @@ import './about_me.css';
 import HeadGrapix from '../../media/headerGraphic.png';
 import About from '../../media/aboutMeGraphic.png';
 import Headshot from '../../media/headshot.jpg';
-import Needle from '../../media/spaceNeedle.png';
+import Needle from '../../media/needle.png';
 
 export default class AboutMe extends Component {
   render() {
