@@ -12,7 +12,7 @@ export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: "all",
+      selected: "All",
       tabs: [],
       cards: []
     };
@@ -27,7 +27,7 @@ export default class Projects extends Component {
   };
 
   filterCards = () => {
-    if (this.state.selected === "all") {
+    if (this.state.selected === "All") {
       return this.state.cards;
     } else {
       const cards = this.state.cards.filter(

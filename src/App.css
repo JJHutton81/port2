@@ -179,3 +179,6 @@ span::after {
   transform: scaleX(1);
 }
 
+ .popup-content {
+  width: 300px !important;
+} 
