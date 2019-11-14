@@ -23,32 +23,43 @@ export const cardData = [
     headline: "Instagram Clone",
     tab: "React",
     img: "./assets/instaclone.jpg",
-    plink: "",
-    rlink: "",
-    text: "",
+    plink: "https://reactinsta.netlify.com",
+    rlink: "https://github.com/FreeKeyBoy/React-Insta-Clone",
+    text:
+      "This is an Instagram clone i made with ReactJS. There is no backend so the comments and like counter will reset when the page reloads."
   },
   {
     headline: "React Sorting Project",
     tab: "React",
     img: "./assets/lambdatimes.jpg",
-    plink: "",
-    rlink: "",
-    text: "",
+    plink: "https://lambdatimesfilter.netlify.com",
+    rlink: "https://github.com/FreeKeyBoy/Sprint-Challenge-Lambda-Times-React",
+    text:
+      "This is a React app I made to learn how to sort components by category using key value pairs."
   },
   {
     headline: "JavaScript UI Project",
     tab: "JavaScript",
     img: "/assets/newsfeed.jpg",
-    plink: "",
-    rlink: "",
-    text: "",
+    plink: "https://newsfeedcomp.netlify.com",
+    rlink: "https://github.com/FreeKeyBoy/Newsfeed-Components",
+    text: "This is a JavaScript project I made using Less, and HTML."
   },
   {
-    headline: "State Management",
-    tab: "React",
+    headline: "Tabs Project JS",
+    tab: "JavaScript",
     img: "/assets/tabs.jpg",
-    plink: "",
-    rlink: "",
-    text: "",
+    plink: "https://tabsproject.netlify.com",
+    rlink: "https://github.com/FreeKeyBoy/Tabs-Components",
+    text: "This is a JavaScript project I made using Less, and HTML. Enjoy my favorite Douglass Adams quotes."
+  },
+  {
+    headline: "Swapi API Project",
+    tab: "API",
+    img: "/assets/starwars.jpg",
+    plink: "https://reactwarsapi.netlify.com",
+    rlink: "https://github.com/FreeKeyBoy/Sprint-Challenge-React-Wars",
+    text:
+      "This is a ReactJS based app that was made using the swapi Star Wars API. I used pagination to sort out the results. "
   }
 ];

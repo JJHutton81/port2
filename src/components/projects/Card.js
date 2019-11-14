@@ -22,9 +22,12 @@ const Card = props => {
         closeOnDocumentClick
       >
         <H3>{props.card.text}</H3>
+        <Div>
+            <H4>View repository on</H4>
         <A href={props.card.rlink} target="_blank" rel="noopener noreferrer">
           <Logo className="GHLogo" src={GitHub} alt="Git Hub Logo" />
         </A>
+        </Div>
       </Popup>
     </CardBody>
   );
@@ -61,16 +64,24 @@ const Image = styled.img`
 `;
 
 const Logo = styled.img`
-  width: 25%;
+  width: 80%;
   margin: 1% auto;
 `;
 
 const H3 = styled.h3`
   font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
-  text-align: justify;
-  padding: 1%;
+  text-align: center;
+  padding: 2%;
 `;
+
+const H4 = styled.h4`
+font-size: 1rem;
+font-family: "Roboto", sans-serif;
+text-align: center;
+padding: 2%;
+width: 100%;
+`
 
 const A = styled.a`
   margin: 1% auto;
@@ -90,3 +101,11 @@ const Button = styled.button`
       cursor: pointer;
   }
 `;
+
+const Div = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-top: 1px solid #cccccc;
+  padding: 1%;
+`
