@@ -19,8 +19,11 @@
 
 .skillText {
   position: absolute;
-  margin: 20% 0 0 5%;
+  margin: 20% 2% 0 3%;
   width: 30%;
+  background-image: url('../../media/paper.jpg');
+  background-size: 100% 100%;
+  padding: 3%;
 }
 
 .skillText p {
