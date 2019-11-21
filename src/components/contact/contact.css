@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .contact_FX {
@@ -117,4 +118,7 @@ button::after {
   position: absolute;
   z-index: -1;
   background-size: contain;
+  height: -webkit-fill-available;
+  width: 100%;
 }
+
