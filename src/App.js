@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer';
 import './App.css';
 
 export default class App extends Component {
+  
   componentDidMount() {
     scrollToComponent(this.Landing, {
       offset: 0,
