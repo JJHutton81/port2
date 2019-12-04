@@ -95,19 +95,6 @@ const A = styled.a`
   width: 100%;
 `;
 
-const Button = styled.button`
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  margin: 1%;
-  padding: 1%;
-  background-color: light-grey;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
 const Div = styled.div`
   display: flex;
   width: 100%;
