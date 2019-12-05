@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import './about_me.css';
-
 import HeadGrapix from '../../media/headerGraphic.png';
 import About from '../../media/aboutMeGraphic.png';
 import Headshot from '../../media/headshot.jpg';
@@ -58,7 +56,7 @@ const AboutFX = styled.img`
   float: left;
   margin: 6% 0 3% 6%;
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     margin: 2% auto;
   }
 `;

@@ -1,72 +1,3 @@
-.ContactBody {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.contact_FX {
-  width: 30%;
-  float: right;
-  margin: 6% 6% 3% 0%;
-}
-
-.ContactWrap {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  margin: 1% auto 0% auto;
-  background: white;
-}
-
-.ContactTitle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  margin: 2%;
-  color: rgba(0, 31, 63, 1);
-}
-
-.TransitionWrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 12%;
-  text-align: center;
-}
-
-.form-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-}
-
-.form-input {
-  width: 50%;
-  padding: 1%;
-  border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  border-style: inset;
-  border: 2px solid #001f3f;
-  margin-top: 3%;
-}
-
-.form-text {
-  width: 50%;
-  padding: 1%;
-  border-radius: 8px;
-  margin-top: 1.5%;
-  height: 20vh;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  border-style: inset;
-  border: 2px solid #001f3f;
-}
-
 .btnWrap {
   display: flex;
   margin: 2%;
@@ -78,8 +9,13 @@
   position: relative;
   font-size: 1.5rem;
   font-family: 'Righteous', cursive;
-  margin: 1%;
+  margin: 1% auto;
   cursor: pointer;
+  border-radius: 8px;
+  background: #373a47;
+  color: white;
+  padding: 5%;
+  width: 100%;
 }
 
 .Btn::before,

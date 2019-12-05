@@ -8,7 +8,7 @@ import AboutMe from './components/aboutMe/AboutMe';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
-import Footer from './components/footer/Footer';
+// import Footer from './components/footer/Footer';
 
 import './App.css';
 
@@ -125,9 +125,9 @@ export default class App extends Component {
             }}>
             <Contact />
           </section>
-          <section>
+          {/* <section>
             <Footer />
-          </section>
+          </section> */}
         </div>
       </div>
     );
