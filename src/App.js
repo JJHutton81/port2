@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { push as Menu } from 'react-burger-menu';
 
 import scrollToComponent from 'react-scroll-to-component';
-// import styled from 'styled-components';
-// import Popup from 'reactjs-popup';
 
 import Landing from './components/landing/Landing';
 import AboutMe from './components/aboutMe/AboutMe';
@@ -29,9 +27,6 @@ export default class App extends Component {
       ease: 'inCirc'
     });
   }
-  handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen });
-  }
   closeMenu() {
     this.setState({ menuOpen: false });
   }
@@ -49,7 +44,10 @@ export default class App extends Component {
           <Landing />
         </section> */}
         <div>
-          <Menu noOverlay pageWrapId={'page-wrap'} outerContainerId={'App'}>
+          <Menu
+            noOverlay
+            pageWrapId={'page-wrap'}
+            outerContainerId={'App'}>
             <div>
               <h1
                 className='menu-item'

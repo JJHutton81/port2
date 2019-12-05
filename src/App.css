@@ -130,23 +130,6 @@ table {
   border-spacing: 0;
 }
 
-.menu {
-  display: flex;
-  background: black;
-  position: fixed;
-  width: 100%;
-  justify-content: space-around;
-  z-index: 3;
-}
-
-.menu h1 {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  margin: 1.5% 0;
-  cursor:pointer;
-}
-
 .PsudoButt::before,
 span::after {
   content: '';
@@ -179,9 +162,9 @@ span::after {
   transform: scaleX(1);
 }
 
- .popup-content {
+.popup-content {
   width: 300px !important;
-} 
+}
 
 #page-wrap {
   text-align: center;
@@ -220,6 +203,8 @@ span::after {
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 /* Position and sizing of clickable cross button */
@@ -238,6 +223,7 @@ span::after {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  overflow: hidden;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -253,6 +239,15 @@ span::after {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
-  overflow: auto; 
 }
 
+/* Styling of menu links*/
+.menu-item {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  margin: 1.5% 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: end;
+}
