@@ -42,9 +42,6 @@ const Body = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  // @media (max-width: 768px) {
-  //   height: auto;
-  // }
 `;
 
 const HeadGraphic = styled.img`
@@ -56,7 +53,7 @@ const AboutFX = styled.img`
   float: left;
   margin: 6% 0 3% 6%;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
     margin: 2% auto;
   }
 `;

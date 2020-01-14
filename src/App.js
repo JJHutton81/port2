@@ -119,7 +119,7 @@ export default class App extends Component {
             </div>
           </Menu>
         </div>
-        <div id='page-wrap'>
+        <PageWrap>
           <section
             className='aboutMe'
             ref={section => {
@@ -151,7 +151,7 @@ export default class App extends Component {
           {/* <section>
             <Footer />
           </section> */}
-        </div>
+        </PageWrap>
       </div>
     );
   }
@@ -172,4 +172,9 @@ margin-top: 5%;
 &:hover {
   border-bottom: 2px solid crimson;
 }
+`
+
+const PageWrap = styled.div`
+  display: flex;
+  flex-direction: column;
 `
