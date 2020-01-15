@@ -62,7 +62,7 @@ const ContactFX = styled.img`
 width: 30%;
 float: right;
 margin: 6% 6% 3% 0%;
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 width: 100%;
 margin: 16% 0 6% 0;
 }
@@ -85,7 +85,7 @@ font-size: 1.2rem;
 border-style: inset;
 border: 2px solid #001f3f;
 margin-top: 3%;
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   width: 90%;
 }
 `
@@ -100,7 +100,7 @@ font-family: 'Roboto', sans-serif;
 font-size: 1.2rem;
 border-style: inset;
 border: 2px solid #001f3f;
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   width: 90%;
 }
 `
@@ -116,7 +116,7 @@ const FormWrap = styled.div`
 display: flex;
 margin: 0 auto;
   width: 50%;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 100%;
   }
 `

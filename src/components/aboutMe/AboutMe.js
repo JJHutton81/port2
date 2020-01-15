@@ -52,7 +52,7 @@ const AboutFX = styled.img`
   width: 30%;
   float: left;
   margin: 6% 0 3% 6%;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 80%;
     margin: 2% auto;
   }
@@ -64,7 +64,7 @@ const GraphicWrap = styled.div`
   width: 99.8%;
   position: absolute;
   margin-top: 7%;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
   }
@@ -75,7 +75,7 @@ const TextWrap = styled.div`
   width: 80%;
   margin: 16% auto;
   background-color: white;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
     margin: 1% auto;
@@ -84,7 +84,7 @@ const TextWrap = styled.div`
 
 const Head = styled.img`
   height: 280px;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 40%;
     border-radius: 50%;
   }
@@ -100,7 +100,7 @@ const P = styled.p`
   padding: 2.5%;
   text-align: justify;
   z-index: 1;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     font-size: 1.2rem;
   }
 `;
@@ -110,7 +110,7 @@ const NeedleFX = styled.img`
   height: 500px;
   margin-left: 6.5%;
   position: absolute;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;

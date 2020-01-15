@@ -25,7 +25,7 @@ export default class Skills extends Component {
         <SkillsFX src={SkillFX} alt='Logo' />
         <Text style={{ display: this.state.isToggle ? 'none' : 'flex' }}>
           <P>
-            I was contemplating how I would list off my skillset. I could just
+            I was contemplating how I would show off my skillset. I could just
             list them off, but that would be boring. I could make a chart, but
             that’s so common it might as well be boring. So why not make it a
             little game? That’s way more fun.{' '}
@@ -33,7 +33,7 @@ export default class Skills extends Component {
           <H2>
             To play simply click and hold on each card, then quickly drag to the
             left or right and release. Swipe left or right if you’re on a
-            touchscreen device.{' '}
+            touchscreen device. Click the button below to get started.{' '}
           </H2>
           <Div>
             <button className='btn' onClick={this.handleClick}>
@@ -61,7 +61,7 @@ const SkillsFX = styled.img`
   float: right;
   margin: 0;
   position: absolute;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 80%;
     margin: 10% auto;
   }
@@ -71,13 +71,36 @@ const Text = styled.div`
   position: absolute;
   margin: 10% auto;
   width: 35%;
-  height: 37vh;
+  height: 45vh;
   background-image: url(${Paper});
   background-size: 100% 100%;
   padding: 10%;
   flex-direction: column;
+  justify-content: center;
   z-index: 1;
   text-align: center;
+  @media (max-width: 1600px) {
+    height 49vh;
+  }
+  @media (max-width: 1550px) {
+    height 50vh;
+  }
+  @media (max-width: 1450px) {
+    height 54vh;
+  }
+  @media (max-width: 1350px) {
+    height 44vh;
+  }
+  @media (max-width: 1349px) and (min-width: 1001px) {
+    height 57vh;
+  }
+  @media (max-width: 1000px) {
+    width: 75%;
+    height: 75vh;
+  }
+  @media (max-width: 999px) and (min-width: 700px) {
+    height 58vh;
+  }
 `;
 
 const P = styled.p`
