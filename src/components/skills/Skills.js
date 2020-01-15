@@ -34,11 +34,11 @@ export default class Skills extends Component {
             left or right and release. Swipe left or right if you’re on a
             touchscreen device.{' '}
           </H2>
-          <button onClick={this.handleClick}>Dismiss</button>
+          <button className="btn btn-1 btn-1b" onClick={this.handleClick}>Dismiss</button>
         </Text>
-        <div className='skills-deck-wrap'>
+        <DeckWrap>
           <SkillsDeck />
-        </div>
+        </DeckWrap>
       </Body>
     );
   }
@@ -47,7 +47,6 @@ export default class Skills extends Component {
 const Body = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 7%;
   height: 100vh;
   align-items: center;
 `;
@@ -55,7 +54,7 @@ const Body = styled.div`
 const SkillsFX = styled.img`
 width: 30%;
 float: right;
-margin: 0 auto;
+margin: 0;
 position: absolute;
 @media (max-width: 768px) {
   width: 80%;
@@ -66,8 +65,8 @@ position: absolute;
 const Text = styled.div`
 position: absolute;
 margin: 10% auto;
-width: 75%;
-height: 75vh;
+width: 35%;
+height: 37vh;
 background-image: url(${Paper});
 background-size: 100% 100%;
 padding: 10%;
@@ -86,4 +85,13 @@ const H2 = styled.h2`
 font-weight: bold;
 font-size: 1.6rem;
 font-family: 'Roboto', sans-serif;
+`
+
+const DeckWrap = styled.div`
+width: 100%;
+height: 75.1vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 2%;
 `
