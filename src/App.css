@@ -261,3 +261,28 @@ span::after {
     width: 100% !important;
   }
 }
+
+.btn {
+  border: none;
+  background: #404040;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  font-weight: 700;
+  background: red;
+  letter-spacing: 3px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transform: scale(1.5);
+  transition: all 0.3s ease 0s;
+}

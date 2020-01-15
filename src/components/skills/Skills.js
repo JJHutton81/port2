@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import './skills.css';
+import '../../App.css';
 
 import SkillFX from '../../media/skillsGraphic.png';
-import Paper from "../../media/paper.jpg"
+import Paper from '../../media/paper.jpg';
 
 import SkillsDeck from './SkillsDeck';
 
@@ -22,7 +23,7 @@ export default class Skills extends Component {
     return (
       <Body>
         <SkillsFX src={SkillFX} alt='Logo' />
-        <Text  style={{ display: this.state.isToggle ? 'none' : 'flex' }}>
+        <Text style={{ display: this.state.isToggle ? 'none' : 'flex' }}>
           <P>
             I was contemplating how I would list off my skillset. I could just
             list them off, but that would be boring. I could make a chart, but
@@ -34,7 +35,11 @@ export default class Skills extends Component {
             left or right and release. Swipe left or right if you’re on a
             touchscreen device.{' '}
           </H2>
-          <button className="btn btn-1 btn-1b" onClick={this.handleClick}>Dismiss</button>
+          <Div>
+            <button className='btn' onClick={this.handleClick}>
+              Dismiss
+            </button>
+          </Div>
         </Text>
         <DeckWrap>
           <SkillsDeck />
@@ -52,46 +57,52 @@ const Body = styled.div`
 `;
 
 const SkillsFX = styled.img`
-width: 30%;
-float: right;
-margin: 0;
-position: absolute;
-@media (max-width: 768px) {
-  width: 80%;
-  margin: 10% auto;
-}
-`
+  width: 30%;
+  float: right;
+  margin: 0;
+  position: absolute;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 10% auto;
+  }
+`;
 
 const Text = styled.div`
-position: absolute;
-margin: 10% auto;
-width: 35%;
-height: 37vh;
-background-image: url(${Paper});
-background-size: 100% 100%;
-padding: 10%;
-flex-direction: column;
-z-index: 1;
-text-align: center;
-`
+  position: absolute;
+  margin: 10% auto;
+  width: 35%;
+  height: 37vh;
+  background-image: url(${Paper});
+  background-size: 100% 100%;
+  padding: 10%;
+  flex-direction: column;
+  z-index: 1;
+  text-align: center;
+`;
 
 const P = styled.p`
-font-size: 1.6rem;
-margin-bottom: 2%;
-font-family: 'Roboto', sans-serif;
-`
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+  font-family: 'Roboto', sans-serif;
+`;
 
 const H2 = styled.h2`
-font-weight: bold;
-font-size: 1.6rem;
-font-family: 'Roboto', sans-serif;
-`
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2%;
+`;
 
 const DeckWrap = styled.div`
-width: 100%;
-height: 75.1vh;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 2%;
+  width: 100%;
+  height: 75.1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+`;
+
+const Div = styled.div`
+  width: 50%;
+  margin: 2% auto;
 `
