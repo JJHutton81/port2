@@ -14,7 +14,7 @@ const Tabs = props => {
         position='bottom center'
         on='hover'
         closeOnDocumentClick
-        mouseLeaveDelay={300}
+        mouseLeaveDelay={0}
         mouseEnterDelay={0}
         contentStyle={{ padding: '1%', border: 'none', display: 'flex', flexDirection: 'column', height: '300px'}}
         arrow={false}>

@@ -164,6 +164,19 @@ span::after {
 
 .popup-content {
   width: 300px !important;
+  border: 1px solid black !important;
+}
+
+.tab {
+  margin: 2%;
+}
+
+.tab:hover {
+  color: red;
+}
+
+.tab:active {
+  color: grey;
 }
 
 #page-wrap {
@@ -254,6 +267,10 @@ span::after {
 
 .menu-item:hover {
   color: crimson;
+}
+
+.menu-item:active {
+  color:grey;
 }
 
 @media (max-width: 1000px) {
