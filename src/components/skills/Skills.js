@@ -71,7 +71,7 @@ const Text = styled.div`
   position: absolute;
   margin: 10% auto;
   width: 35%;
-  height: 45vh;
+  height: 37vh;
   background-image: url(${Paper});
   background-size: 100% 100%;
   padding: 10%;

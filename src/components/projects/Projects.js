@@ -64,6 +64,6 @@ const ProjectContainer = styled.div`
 
 const Image = styled.img`
   width: 30%;
-  float: left;
-  margin: 6% 0 0% 6%;
+  float: right;
+  margin: 0% 6% 0% 0%;
 `;

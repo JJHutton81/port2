@@ -2,14 +2,15 @@ import React from 'react';
 import Popup from 'reactjs-popup';
 
 import Tab from './Tab';
+import '../../App.css';
 
 import styled from 'styled-components';
 
 const Tabs = props => {
   return (
-    <div>
+    <Div>
       <Popup
-        trigger={<p>Filter</p>}
+        trigger={<button className="btn">Filter</button>}
         position='bottom center'
         on='hover'
         closeOnDocumentClick
@@ -28,7 +29,7 @@ const Tabs = props => {
           ))}
         </Categories>
       </Popup>
-    </div>
+    </Div>
   );
 };
 
@@ -51,3 +52,10 @@ const Categories = styled.div`
     }
   }
 `;
+
+const Div = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 3%;
+`
