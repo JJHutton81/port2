@@ -10,7 +10,7 @@ const Tabs = props => {
   return (
     <Div>
       <Popup
-        trigger={<button className="btn">Filter</button>}
+        trigger={<button className="Btnf">Filter</button>}
         position='bottom center'
         on='hover'
         closeOnDocumentClick
