@@ -28,6 +28,11 @@ const Card = props => {
         mouseLeaveDelay={300}
         mouseEnterDelay={0}>
         <H3>{props.card.text}</H3>
+        <Ul>
+          <li>{props.card.bullet1}</li>
+          <li>{props.card.bullet2}</li>
+          <li>{props.card.bullet3}</li>
+        </Ul>
         <Div>
           <H4>View repository on</H4>
           <A href={props.card.rlink} target='_blank' rel='noopener noreferrer'>
@@ -102,3 +107,7 @@ const Div = styled.div`
   border-top: 1px solid #cccccc;
   padding: 1%;
 `;
+
+const Ul = styled.ul`
+  list-style: circle;
+`

@@ -8,7 +8,10 @@ export const cardData = [
     plink: "https://joinourbigday.netlify.com",
     rlink: "https://github.com/Lambda-School-Labs/labspt2-wedding-website",
     text:
-      "Join Our Big Day is the result of a five person dev team, over the course of ten weeks. The purpose of the school project was to simulate the real world environment of web development. Each developer worked on both the back-end and the front-end, as needed."
+      "Join Our Big Day is the result of a five person dev team, over the course of ten weeks. The purpose of the school project was to simulate the real world environment of web development. Each developer worked on both the back-end and the front-end, as needed.",
+    bullet1: "Five person build in ten weeks",
+    bullet2: "I engeneered the UI/UX",
+    bullet3: "Third thing"
   },
   {
     headline: "Note Keeping App",
