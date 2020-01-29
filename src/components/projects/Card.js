@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Popup from 'reactjs-popup';
 
-import GitHub from '../../media/github.png';
+import GitHub from '../../media/GitHub_Logo.png';
 
 import '../../App.css';
 
@@ -28,10 +28,11 @@ const Card = props => {
         mouseLeaveDelay={300}
         mouseEnterDelay={0}>
         <H3>{props.card.text}</H3>
+        <H4>{props.card.stack}</H4>
         <Ul>
-          <li>{props.card.bullet1}</li>
-          <li>{props.card.bullet2}</li>
-          <li>{props.card.bullet3}</li>
+          <Li>{props.card.bullet1}</Li>
+          <Li>{props.card.bullet2}</Li>
+          <Li>{props.card.bullet3}</Li>
         </Ul>
         <Div>
           <H4>View repository on</H4>
@@ -76,7 +77,6 @@ const Image = styled.img`
 
 const Logo = styled.img`
   width: 80%;
-  margin: 1% auto;
 `;
 
 const H3 = styled.h3`
@@ -94,6 +94,11 @@ const H4 = styled.h4`
   width: 100%;
 `;
 
+const Li = styled.li`
+  font-size: .9rem;
+  font-family: 'Roboto', sans-serif;
+`
+
 const A = styled.a`
   margin: 1% auto;
   display: flex;
@@ -104,10 +109,13 @@ const Div = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
   border-top: 1px solid #cccccc;
-  padding: 1%;
+  padding: 2%;
+  margin-top: 2%;
 `;
 
 const Ul = styled.ul`
   list-style: circle;
+  padding-left: 5%;
 `

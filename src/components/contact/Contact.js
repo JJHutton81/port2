@@ -10,9 +10,9 @@ export default class Contact extends Component {
   render() {
     return (
       <Body>
-        <div>
+        <Div>
           <ContactFX src={ContactGrapfix} alt='Logo' />
-        </div>
+        </Div>
         <FormWrap>
           {/* <h1 className='ContactTitle'>
             This site is under almost constant construction. Check back often
@@ -58,13 +58,17 @@ flex-direction: column;
 overflow: hidden;
 `
 
+const Div = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
+`
+
 const ContactFX = styled.img`
 width: 30%;
-float: right;
-margin: 6% 6% 3% 0%;
+margin: 6% 0;
 @media (max-width: 1000px) {
 width: 100%;
-margin: 16% 0 6% 0;
 }
 `
 
