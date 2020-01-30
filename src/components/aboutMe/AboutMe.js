@@ -18,9 +18,9 @@ export default class AboutMe extends Component {
             <Head src={Headshot} alt='Headshot photo of James Hutton' />
             <Section>
               <P>
-                Hello again, and thank you for visiting my website. I started my
+                Hello and thank you for visiting my website. I started my
                 journey as a classically trained artist. As I grew older, I
-                found myself getting pulled more and more to the more
+                found myself getting pulled more and more to the
                 modern/technical side of art, and became a graphic designer.
                 Everything you see here is my own work. About ten years ago I
                 moved to Seattle and gained an interest in web development. Now
@@ -86,7 +86,7 @@ const Head = styled.img`
   height: 280px;
   @media (max-width: 1000px) {
     width: 40%;
-    border-radius: 50%;
+  
   }
 `;
 

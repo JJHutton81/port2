@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 
-import "./contact.css";
+import "../../App.css";
 
 import ContactGrapfix from '../../media/contactGraphic.png';
 import Foot from '../../media/footGraphic.png';
@@ -38,7 +38,7 @@ export default class Contact extends Component {
               wrap='soft'
             />
             <div className="btnWrap">
-              <button type='submit' className='Btn'>
+              <button type='submit' className='BtnS'>
                 Submit
               </button>
             </div>
