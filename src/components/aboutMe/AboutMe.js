@@ -54,7 +54,7 @@ const AboutFX = styled.img`
   margin: 6% 0 3% 6%;
   @media (max-width: 1000px) {
     width: 80%;
-    margin: 2% auto;
+    margin: 15% auto 5% auto;
   }
 `;
 
@@ -84,9 +84,11 @@ const TextWrap = styled.div`
 
 const Head = styled.img`
   height: 280px;
-  @media (max-width: 1000px) {
-    width: 40%;
-  
+  @media (max-width: 400px) {
+    width: 95%;
+  }
+  @media (max-width: 1000px) and (min-width: 401px) {
+    width: 200px;
   }
 `;
 
@@ -100,8 +102,8 @@ const P = styled.p`
   padding: 2.5%;
   text-align: justify;
   z-index: 1;
-  @media (max-width: 1000px) {
-    font-size: 1.2rem;
+  @media (max-width: 500px) {
+    font-size: 1rem;
   }
 `;
 

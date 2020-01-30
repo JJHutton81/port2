@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import { push as Menu } from 'react-burger-menu';
+import React, { Component } from "react";
+import { push as Menu } from "react-burger-menu";
 
-import scrollToComponent from 'react-scroll-to-component';
-import styled from 'styled-components';
+import scrollToComponent from "react-scroll-to-component";
+import styled from "styled-components";
 
 // import Landing from './components/landing/Landing';
-import AboutMe from './components/aboutMe/AboutMe';
-import Skills from './components/skills/Skills';
-import Contact from './components/contact/Contact';
-import Projects from './components/projects/Projects';
+import AboutMe from "./components/aboutMe/AboutMe";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
+import Projects from "./components/projects/Projects";
 // import Footer from './components/footer/Footer';
 
-import LiLogo from './media/LI-Logo.png';
-import GhLogo from './media/github.png';
-import TLogo from './media/twitter.png';
+import LiLogo from "./media/LI-Logo.png";
+import GhLogo from "./media/github.png";
+import TLogo from "./media/twitter.png";
 
-import './App.css';
+import "./App.css";
 
 export default class App extends Component {
   constructor(props) {
@@ -27,9 +27,9 @@ export default class App extends Component {
   componentDidMount() {
     scrollToComponent(this.AboutMe, {
       offset: 0,
-      align: 'top',
+      align: "top",
       duration: 500,
-      ease: 'inCirc'
+      ease: "inCirc"
     });
   }
   closeMenu() {
@@ -40,7 +40,7 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div id='App'>
+      <div id="App">
         {/* <section
           className='landing'
           ref={section => {
@@ -49,103 +49,112 @@ export default class App extends Component {
           <Landing />
         </section> */}
         <div>
-          <Menu noOverlay pageWrapId={'page-wrap'} outerContainerId={'App'}>
+          <Menu noOverlay pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <div>
               <h1
-                className='menu-item'
+                className="menu-item"
                 onClick={() =>
                   scrollToComponent(this.AboutMe, {
                     offset: 0,
-                    align: 'top',
+                    align: "top",
                     duration: 500
                   })
-                }>
+                }
+              >
                 About Me
               </h1>
               <h1
-                className='menu-item'
+                className="menu-item"
                 onClick={() =>
                   scrollToComponent(this.Skills, {
                     offset: 0,
-                    align: 'top',
+                    align: "top",
                     duration: 500
                   })
-                }>
+                }
+              >
                 Skills
               </h1>
               <h1
-                className='menu-item'
+                className="menu-item"
                 onClick={() =>
                   scrollToComponent(this.Projects, {
                     offset: 0,
-                    align: 'top',
+                    align: "top",
                     duration: 500
                   })
-                }>
+                }
+              >
                 Projects
               </h1>
               <h1
-                className='menu-item'
+                className="menu-item"
                 onClick={() =>
                   scrollToComponent(this.Contact, {
                     offset: 0,
-                    align: 'top',
+                    align: "top",
                     duration: 500
                   })
-                }>
+                }
+              >
                 Contact
               </h1>
-              
-                <H1>Follow me on</H1>
-                <a
-                  href='https://www.linkedin.com/in/james-hutton-87a82b183/'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <Image src={LiLogo} alt='Linked in logo' />
-                </a>
-                <a
-                  href='https://github.com/FreeKeyBoy?tab=repositories'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <Image src={GhLogo} alt='Github logo' />
-                </a>
-                <a
-                  href='https://twitter.com/JamesHu91877325'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <Image src={TLogo} alt='Twitter logo' />
-                </a>
-              
+
+              <H1>Follow me on</H1>
+              <a
+                href="https://www.linkedin.com/in/james-hutton-87a82b183/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={LiLogo} alt="Linked in logo" />
+              </a>
+              <a
+                href="https://github.com/FreeKeyBoy?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={GhLogo} alt="Github logo" />
+              </a>
+              <a
+                href="https://twitter.com/JamesHu91877325"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={TLogo} alt="Twitter logo" />
+              </a>
             </div>
           </Menu>
         </div>
         <PageWrap>
-          <section
-            className='aboutMe'
+          <About
             ref={section => {
               this.AboutMe = section;
-            }}>
+            }}
+          >
             <AboutMe />
-          </section>
+          </About>
           <section
-            className='skills'
+            className="skills"
             ref={section => {
               this.Skills = section;
-            }}>
+            }}
+          >
             <Skills />
           </section>
           <section
-            className='projects'
+            className="projects"
             ref={section => {
               this.Projects = section;
-            }}>
+            }}
+          >
             <Projects />
           </section>
           <section
-            className='contact'
+            className="contact"
             ref={section => {
               this.Contact = section;
-            }}>
+            }}
+          >
             <Contact />
           </section>
           {/* <section>
@@ -158,23 +167,29 @@ export default class App extends Component {
 }
 
 const H1 = styled.h1`
-color: white;
-font-family: 'Roboto', sans-serif;
-font-size: 1.6rem;
-margin: 10% 0 5% 0;
-text-align: end;
-`
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin: 10% 0 5% 0;
+  text-align: end;
+`;
 
 const Image = styled.img`
-height: 40px;
-float: right;
-margin-top: 5%;
-&:hover {
-  border-bottom: 2px solid crimson;
-}
-`
+  height: 40px;
+  float: right;
+  margin-top: 5%;
+  &:hover {
+    border-bottom: 2px solid crimson;
+  }
+`;
 
 const PageWrap = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
+
+const About = styled.section`
+    @media (max-width: 500px) {
+    margin-bottom: 41%;
+  }
+`;

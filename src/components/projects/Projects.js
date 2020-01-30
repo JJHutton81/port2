@@ -42,16 +42,18 @@ export default class Projects extends Component {
     return (
       <ProjectContainer>
         <MidG2img src={MidG2} alt="Background Image" />
-        <div>
+        <LogoDiv>
           <Image src={ProjectsGraphix} alt="Logo" />
-        </div>
+        </LogoDiv>
         <div>
           <Tabs
             tabs={this.state.tabs}
             selectedTab={this.state.selected}
             selectTabHandler={this.changeSelected}
           />
-          <Cards cards={this.filterCards()} />
+          <Div>
+            <Cards cards={this.filterCards()} />
+          </Div>  
         </div>
       </ProjectContainer>
     );
@@ -76,4 +78,22 @@ const Image = styled.img`
   width: 30%;
   float: right;
   margin: 0% 6% 0% 0%;
+  @media (max-width: 1000px) {
+    width: 80%;
+    margin: 20% 0 2% 0;
+  }
 `;
+
+const LogoDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
+
+const Div = styled.div`
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 418px;
+    overflow: auto;
+  }
+`

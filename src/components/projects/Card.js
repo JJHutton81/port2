@@ -48,7 +48,7 @@ const Card = props => {
 export default Card;
 
 const CardBody = styled.div`
-  width: 20%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

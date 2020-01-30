@@ -167,10 +167,11 @@
     position: absolute
   } */
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 500px) {
   .CardImage {
-    height: 65vh;
-    /* width: 80%; */
+    height: 60vh;
+    width: 63%;
+    margin-top: 35%;
   }
 
   .skills-deck-wrap {

@@ -71,7 +71,7 @@ const SkillsFX = styled.img`
   position: absolute;
   @media (max-width: 1000px) {
     width: 80%;
-    margin: 10% auto;
+    margin: 20% auto;
   }
 `;
 
@@ -106,8 +106,9 @@ const Text = styled.div`
     width: 75%;
     height: 75vh;
   }
-  @media (max-width: 999px) and (min-width: 700px) {
+  @media (max-width: 500px) {
     height 58vh;
+    margin-top: 50%;
   }
 `;
 
@@ -115,6 +116,11 @@ const P = styled.p`
   font-size: 1.6rem;
   margin-bottom: 2%;
   font-family: "Roboto", sans-serif;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+    margin-bottom: 8%;
+    line-height: 1.5;
+  }
 `;
 
 const H2 = styled.h2`
@@ -122,6 +128,11 @@ const H2 = styled.h2`
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   margin-bottom: 2%;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+    margin-bottom: 6%;
+    line-height: 1.5;
+  }
 `;
 
 const DeckWrap = styled.div`
@@ -131,9 +142,15 @@ const DeckWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 2%;
+  @media (max-width: 500px) {
+    margin-top: 12%;
+  }
 `;
 
 const Div = styled.div`
   width: 50%;
   margin: 2% auto;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;

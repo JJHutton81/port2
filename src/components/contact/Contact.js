@@ -65,12 +65,13 @@ justify-content: center;
 `
 
 const ContactFX = styled.img`
-width: 30%;
-margin: 6% 0;
-@media (max-width: 1000px) {
-width: 100%;
-}
-`
+  width: 30%;
+  margin: 6% 0;
+  @media (max-width: 1000px) {
+    width: 80%;
+    margin: 20% auto 10% auto;
+  }
+`;
 
 const Form = styled.form`
 display: flex;
@@ -106,6 +107,7 @@ border-style: inset;
 border: 2px solid #001f3f;
 @media (max-width: 1000px) {
   width: 90%;
+  height: 45vh;
 }
 `
 
