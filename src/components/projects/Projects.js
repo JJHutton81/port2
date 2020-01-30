@@ -6,6 +6,7 @@ import Cards from "./Cards";
 import styled from "styled-components";
 
 import ProjectsGraphix from "../../media/projectsGraphic.png";
+import MidG2 from "../../media/midGraphic2.png";
 import { tabData, cardData } from "../../ProjectData";
 
 export default class Projects extends Component {
@@ -40,6 +41,7 @@ export default class Projects extends Component {
   render() {
     return (
       <ProjectContainer>
+        <MidG2img src={MidG2} alt="Background Image" />
         <div>
           <Image src={ProjectsGraphix} alt="Logo" />
         </div>
@@ -60,6 +62,13 @@ const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
+`;
+
+const MidG2img = styled.img`
+  position: absolute;
+  width: 100%;
+  z-index: -1
   height: 100vh;
 `;
 

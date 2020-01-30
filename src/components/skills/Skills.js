@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import './skills.css';
-import '../../App.css';
+import "./skills.css";
+import "../../App.css";
 
-import SkillFX from '../../media/skillsGraphic.png';
-import Paper from '../../media/paper.jpg';
+import SkillFX from "../../media/skillsGraphic.png";
+import Paper from "../../media/paper.png";
+import MidG1 from "../../media/midGraphic1.png";
 
-import SkillsDeck from './SkillsDeck';
+import SkillsDeck from "./SkillsDeck";
 
 export default class Skills extends Component {
   constructor(props) {
@@ -22,21 +23,22 @@ export default class Skills extends Component {
   render() {
     return (
       <Body>
-        <SkillsFX src={SkillFX} alt='Logo' />
-        <Text style={{ display: this.state.isToggle ? 'none' : 'flex' }}>
+        <MidG1img src={MidG1} alt="Background Image" />
+        <SkillsFX src={SkillFX} alt="Logo" />
+        <Text style={{ display: this.state.isToggle ? "none" : "flex" }}>
           <P>
             I was contemplating how I would show off my skillset. I could just
             list them off, but that would be boring. I could make a chart, but
             that’s so common it might as well be boring. So why not make it a
-            little game? That’s way more fun.{' '}
+            little game? That’s way more fun.{" "}
           </P>
           <H2>
             To play simply click and hold on each card, then quickly drag to the
             left or right and release. Swipe left or right if you’re on a
-            touchscreen device. Click the button below to get started.{' '}
+            touchscreen device. Click the button below to get started.{" "}
           </H2>
           <Div>
-            <button className='btn' onClick={this.handleClick}>
+            <button className="btn" onClick={this.handleClick}>
               Dismiss
             </button>
           </Div>
@@ -54,6 +56,12 @@ const Body = styled.div`
   flex-direction: column;
   height: 100vh;
   align-items: center;
+`;
+
+const MidG1img = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 `;
 
 const SkillsFX = styled.img`
@@ -106,13 +114,13 @@ const Text = styled.div`
 const P = styled.p`
   font-size: 1.6rem;
   margin-bottom: 2%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 `;
 
 const H2 = styled.h2`
   font-weight: bold;
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 2%;
 `;
 
@@ -128,4 +136,4 @@ const DeckWrap = styled.div`
 const Div = styled.div`
   width: 50%;
   margin: 2% auto;
-`
+`;

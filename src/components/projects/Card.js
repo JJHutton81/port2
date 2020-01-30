@@ -62,8 +62,10 @@ const CardBody = styled.div`
 const Headline = styled.h2`
   font-weight: bold;
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 1%;
+  text-align: center;
+  text-shadow: -1px 1px 20px #fa1633;
 `;
 
 const ImgCont = styled.div`
