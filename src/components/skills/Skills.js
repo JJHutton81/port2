@@ -69,9 +69,13 @@ const SkillsFX = styled.img`
   float: right;
   margin: 0;
   position: absolute;
-  @media (max-width: 1000px) {
+  @media (max-width: 400px) {
     width: 80%;
     margin: 20% auto;
+  }
+  @media (min-width: 401px) and (max-width: 700px) {
+    margin: 0 auto;
+    width: 80%;
   }
 `;
 
@@ -106,7 +110,11 @@ const Text = styled.div`
     width: 75%;
     height: 75vh;
   }
-  @media (max-width: 500px) {
+  @media (min-width: 401px) and (max-width: 700px) {
+    height: 55vh;
+    margin-top: 25%;
+  }
+  @media (max-width: 400px) {
     height 58vh;
     margin-top: 50%;
   }
@@ -142,8 +150,11 @@ const DeckWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 2%;
-  @media (max-width: 500px) {
+  @media (max-width: 400px) {
     margin-top: 12%;
+  }
+  @media (min-width: 401px) and (max-width: 700px) {
+    margin-top: 13%;
   }
 `;
 

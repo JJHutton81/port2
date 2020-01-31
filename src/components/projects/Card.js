@@ -57,6 +57,9 @@ const CardBody = styled.div`
   padding: 0.5%;
   -webkit-box-shadow: 0px 5px 15px 1px #000000;
   box-shadow: 0px 5px 15px 1px #000000;
+  @media (min-width: 401px) and (max-width: 700px) {
+    margin: 1%;
+  }
 `;
 
 const Headline = styled.h2`

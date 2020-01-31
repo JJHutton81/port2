@@ -78,9 +78,13 @@ const Image = styled.img`
   width: 30%;
   float: right;
   margin: 0% 6% 0% 0%;
-  @media (max-width: 1000px) {
+  @media (max-width: 400px) {
     width: 80%;
     margin: 20% 0 2% 0;
+  }
+  @media (min-width: 401px) and (max-width: 700px) {
+    width: 80%;
+    margin: 0;
   }
 `;
 
