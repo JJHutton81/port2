@@ -69,6 +69,11 @@ const Headline = styled.h2`
   margin: 1%;
   text-align: center;
   text-shadow: -1px 1px 20px #fa1633;
+  background: white;
+  border-radius: 50%;
+  width: 100%;
+  line-height: 1.4;
+  height: 36px;
 `;
 
 const ImgCont = styled.div`

@@ -61,19 +61,22 @@ overflow: hidden;
 const Div = styled.div`
 width: 100%;
 display: flex;
-justify-content: center;
 `
 
 const ContactFX = styled.img`
   width: 30%;
-  margin: 6% 0;
+  float: left;
+  margin: 6% 0 3% 6%;
   @media (max-width: 400px) {
     width: 80%;
-    margin: 20% auto 10% auto;
+    margin: 15% auto 5% auto;
   }
   @media (min-width: 401px) and (max-width: 700px) {
-    width: 80%;
     margin: 0% auto 5% auto;
+    width: 80%;
+  }
+  @media (min-width: 701px) and (max-width: 1000px) {
+    width: 40%;
   }
 `;
 

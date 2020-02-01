@@ -6,7 +6,7 @@ import "../../App.css";
 
 import SkillFX from "../../media/skillsGraphic.png";
 import Paper from "../../media/paper.png";
-import MidG1 from "../../media/midGraphic1.png";
+import MidG2 from "../../media/midGraphic2.png";
 
 import SkillsDeck from "./SkillsDeck";
 
@@ -23,8 +23,9 @@ export default class Skills extends Component {
   render() {
     return (
       <Body>
-        <MidG1img src={MidG1} alt="Background Image" />
+        <MidG2img src={MidG2} alt="Background Image" />
         <SkillsFX src={SkillFX} alt="Logo" />
+        <DivTextDeck>
         <Text style={{ display: this.state.isToggle ? "none" : "flex" }}>
           <P>
             I was contemplating how I would show off my skillset. I could just
@@ -46,6 +47,7 @@ export default class Skills extends Component {
         <DeckWrap>
           <SkillsDeck />
         </DeckWrap>
+        </DivTextDeck>
       </Body>
     );
   }
@@ -58,35 +60,43 @@ const Body = styled.div`
   align-items: center;
 `;
 
-const MidG1img = styled.img`
+const DivTextDeck = styled.div`
+  display: flex;
+  justify-content: space evenly;
+`
+
+const MidG2img = styled.img`
   position: absolute;
   width: 100%;
   height: 100vh;
+  z-index: -1;
 `;
 
 const SkillsFX = styled.img`
   width: 30%;
-  float: right;
-  margin: 0;
-  position: absolute;
+  float: left;
+  margin: 6% 0 0% 6%;
+  align-self: flex-start;
   @media (max-width: 400px) {
     width: 80%;
-    margin: 20% auto;
+    margin: 15% auto 5% auto;
   }
   @media (min-width: 401px) and (max-width: 700px) {
-    margin: 0 auto;
+    margin: 0% auto 5% auto;
     width: 80%;
+  }
+  @media (min-width: 701px) and (max-width: 1000px) {
+    width: 40%;
   }
 `;
 
 const Text = styled.div`
-  position: absolute;
-  margin: 10% auto;
-  width: 35%;
-  height: 37vh;
+  align-self: flex-start;
+  margin-left: 2%;
+  width: 25%;
   background-image: url(${Paper});
   background-size: 100% 100%;
-  padding: 10%;
+  padding: 5%;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
@@ -121,7 +131,7 @@ const Text = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 2%;
   font-family: "Roboto", sans-serif;
   @media (max-width: 500px) {
@@ -133,7 +143,7 @@ const P = styled.p`
 
 const H2 = styled.h2`
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   margin-bottom: 2%;
   @media (max-width: 500px) {
@@ -149,7 +159,6 @@ const DeckWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
   @media (max-width: 400px) {
     margin-top: 12%;
   }

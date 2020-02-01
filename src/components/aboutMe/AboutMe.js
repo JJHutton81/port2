@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import HeadGrapix from '../../media/headerGraphic.png';
+import HeadGrapix from '../../media/Rainier.png';
 import About from '../../media/aboutMeGraphic.png';
 import Headshot from '../../media/headshot.jpg';
 import Needle from '../../media/needle.png';
@@ -46,7 +46,10 @@ const Body = styled.div`
 `;
 
 const HeadGraphic = styled.img`
+  position: absolute;
   width: 100%;
+  height: 100vh;
+  z-index: -1;
 `;
 
 const AboutFX = styled.img`

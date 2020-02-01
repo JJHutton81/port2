@@ -6,7 +6,8 @@ import Cards from "./Cards";
 import styled from "styled-components";
 
 import ProjectsGraphix from "../../media/projectsGraphic.png";
-import MidG2 from "../../media/midGraphic2.png";
+// import MidG2 from "../../media/midGraphic2.png";
+import MidG1 from "../../media/midGraphic1.png";
 import { tabData, cardData } from "../../ProjectData";
 
 export default class Projects extends Component {
@@ -41,7 +42,7 @@ export default class Projects extends Component {
   render() {
     return (
       <ProjectContainer>
-        <MidG2img src={MidG2} alt="Background Image" />
+        <MidG1img src={MidG1} alt="Background Image" />
         <LogoDiv>
           <Image src={ProjectsGraphix} alt="Logo" />
         </LogoDiv>
@@ -67,31 +68,33 @@ const ProjectContainer = styled.div`
   height: 100vh;
 `;
 
-const MidG2img = styled.img`
+const MidG1img = styled.img`
   position: absolute;
   width: 100%;
-  z-index: -1
   height: 100vh;
+  z-index: -1;
 `;
 
 const Image = styled.img`
   width: 30%;
-  float: right;
-  margin: 0% 6% 0% 0%;
+  float: left;
+  margin: 6% 0 3% 6%;
   @media (max-width: 400px) {
     width: 80%;
-    margin: 20% 0 2% 0;
+    margin: 15% auto 5% auto;
   }
   @media (min-width: 401px) and (max-width: 700px) {
+    margin: 0% auto 5% auto;
     width: 80%;
-    margin: 0;
+  }
+  @media (min-width: 701px) and (max-width: 1000px) {
+    width: 40%;
   }
 `;
 
 const LogoDiv = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
 `
 
 const Div = styled.div`

@@ -66,18 +66,6 @@ export default class App extends Component {
               <h1
                 className="menu-item"
                 onClick={() =>
-                  scrollToComponent(this.Skills, {
-                    offset: 0,
-                    align: "top",
-                    duration: 500
-                  })
-                }
-              >
-                Skills
-              </h1>
-              <h1
-                className="menu-item"
-                onClick={() =>
                   scrollToComponent(this.Projects, {
                     offset: 0,
                     align: "top",
@@ -86,6 +74,18 @@ export default class App extends Component {
                 }
               >
                 Projects
+              </h1>
+              <h1
+                className="menu-item"
+                onClick={() =>
+                  scrollToComponent(this.Skills, {
+                    offset: 0,
+                    align: "top",
+                    duration: 500
+                  })
+                }
+              >
+                Skills
               </h1>
               <h1
                 className="menu-item"
@@ -134,20 +134,20 @@ export default class App extends Component {
             <AboutMe />
           </About>
           <section
-            className="skills"
-            ref={section => {
-              this.Skills = section;
-            }}
-          >
-            <Skills />
-          </section>
-          <section
             className="projects"
             ref={section => {
               this.Projects = section;
             }}
           >
             <Projects />
+          </section>
+          <section
+            className="skills"
+            ref={section => {
+              this.Skills = section;
+            }}
+          >
+            <Skills />
           </section>
           <section
             className="contact"
