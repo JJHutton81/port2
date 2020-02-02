@@ -113,6 +113,9 @@ const TextWrap = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   height: 300px;
+  & :hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
   @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
