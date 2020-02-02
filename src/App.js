@@ -41,13 +41,6 @@ export default class App extends Component {
   render() {
     return (
       <div id="App">
-        {/* <section
-          className='landing'
-          ref={section => {
-            this.Landing = section;
-          }}>
-          <Landing />
-        </section> */}
         <div>
           <Menu noOverlay pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <div>
