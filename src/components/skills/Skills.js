@@ -63,6 +63,8 @@ const Body = styled.div`
 const DivTextDeck = styled.div`
   display: flex;
   justify-content: space evenly;
+  position: absolute;
+  margin-top: 10%;
 `
 
 const MidG2img = styled.img`
@@ -92,11 +94,11 @@ const SkillsFX = styled.img`
 
 const Text = styled.div`
   align-self: flex-start;
-  margin-left: 2%;
+  margin: 6% 0 0 8%;
   width: 25%;
   background-image: url(${Paper});
   background-size: 100% 100%;
-  padding: 5%;
+  padding: 2%;
   flex-direction: column;
   justify-content: center;
   z-index: 1;

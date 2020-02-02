@@ -398,3 +398,9 @@ button::after {
   transform-origin: center right;
   transform: scaleX(1);
 }
+
+@media screen and (min-width: 1000px) {
+  .btn {
+    display: none;
+  }
+}

@@ -10,10 +10,16 @@ export default class AboutMe extends Component {
   render() {
     return (
       <Body>
+        <Title>
+          <H1>
+            Full-stack ReactJS developer with a background in graphic design and
+            passion for all things front-end
+          </H1>
+        </Title>
         <HeadGraphic src={HeadGrapix} alt="Logo" />
         <GraphicWrap>
           <AboutFX src={About} alt="Logo" />
-          <NeedleFX src={Needle} alt="Space Needle" />
+          {/* <NeedleFX src={Needle} alt="Space Needle" /> */}
           <TextWrap>
             <Head src={Headshot} alt="Headshot photo of James Hutton" />
             <Section>
@@ -32,6 +38,7 @@ export default class AboutMe extends Component {
                 up. Let’s make something special together.{" "}
               </P>
             </Section>
+            <NeedleFX src={Needle} alt="Space Needle" />
           </TextWrap>
         </GraphicWrap>
       </Body>
@@ -45,6 +52,23 @@ const Body = styled.div`
   height: 100vh;
 `;
 
+const Title = styled.div`
+  width: 100%;
+  height: 100px;
+  background: black;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const H1 = styled.h1`
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+`;
+
 const HeadGraphic = styled.img`
   position: absolute;
   width: 100%;
@@ -55,7 +79,7 @@ const HeadGraphic = styled.img`
 const AboutFX = styled.img`
   width: 30%;
   float: left;
-  margin: 6% 0 3% 6%;
+  margin: 3% 0 3% 6%;
   @media (max-width: 400px) {
     width: 80%;
     margin: 15% auto 5% auto;
@@ -84,8 +108,11 @@ const GraphicWrap = styled.div`
 const TextWrap = styled.div`
   display: flex;
   width: 80%;
-  margin: 16% auto;
-  background-color: white;
+  margin: 20% auto 0 auto;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  height: 300px;
   @media (max-width: 700px) {
     flex-direction: column;
     align-items: center;
@@ -98,7 +125,8 @@ const TextWrap = styled.div`
 `;
 
 const Head = styled.img`
-  height: 280px;
+  height: 300px;
+  border-radius: 8px 0px 0px 8px;
   @media (max-width: 400px) {
     width: 95%;
   }
@@ -126,14 +154,19 @@ const Head2 = styled.img`
 
 const Section = styled.section`
   z-index: 1;
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justifycontent: cnter;
 `;
 
 const P = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding: 2.5%;
   text-align: justify;
   z-index: 1;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 400px) {
     font-size: 1rem;
   }
@@ -148,8 +181,8 @@ const P = styled.p`
 const NeedleFX = styled.img`
   width: 15%;
   height: 500px;
-  margin-left: 6.5%;
-  position: absolute;
+  margin: 1.5%;
+  height: 270px;
   @media (max-width: 1000px) {
     display: none;
   }
