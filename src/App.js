@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { push as Menu } from "react-burger-menu";
+import { Element } from "react-scroll";
 
 import scrollToComponent from "react-scroll-to-component";
 import styled from "styled-components";
@@ -16,6 +17,7 @@ import GhLogo from "./media/github.png";
 import TLogo from "./media/twitter.png";
 
 import "./App.css";
+import Navbar from "./components/nav/Navbar";
 
 export default class App extends Component {
   constructor(props) {
@@ -50,7 +52,8 @@ export default class App extends Component {
                   scrollToComponent(this.AboutMe, {
                     offset: 0,
                     align: "top",
-                    duration: 500
+                    duration: 500,
+                    activeClass: "active"
                   })
                 }
               >
@@ -119,6 +122,8 @@ export default class App extends Component {
           </Menu>
         </div>
         <PageWrap>
+          <Navbar />
+          <Element name= "AboutMe">
           <About
             ref={section => {
               this.AboutMe = section;
@@ -126,6 +131,8 @@ export default class App extends Component {
           >
             <AboutMe />
           </About>
+          </Element>
+          <Element name="Projects">
           <section
             className="projects"
             ref={section => {
@@ -134,6 +141,8 @@ export default class App extends Component {
           >
             <Projects />
           </section>
+          </Element>
+          <Element name="Skills">
           <section
             className="skills"
             ref={section => {
@@ -142,6 +151,8 @@ export default class App extends Component {
           >
             <Skills />
           </section>
+          </Element>
+          <Element name="Contact">
           <section
             className="contact"
             ref={section => {
@@ -150,6 +161,7 @@ export default class App extends Component {
           >
             <Contact />
           </section>
+          </Element>
           {/* <section>
             <Footer />
           </section> */}

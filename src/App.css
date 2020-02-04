@@ -122,17 +122,32 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+.active {
+  border-bottom: 1px solid white;
+  color: red;
+}
 
 .PsudoButt::before,
 span::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -217,6 +232,12 @@ span::after {
   top: 36px;
 }
 
+@media (min-width: 699px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
@@ -261,7 +282,7 @@ span::after {
 /* Styling of menu links*/
 .menu-item {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   margin: 1.5% 0;
   cursor: pointer;
@@ -274,7 +295,7 @@ span::after {
 }
 
 .menu-item:active {
-  color:grey;
+  color: grey;
 }
 
 @media (max-width: 1000px) {
@@ -295,7 +316,7 @@ span::after {
   display: inline-block;
   transition: all 0.3s ease 0s;
   width: 150px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
 
@@ -314,7 +335,7 @@ span::after {
 .Btnf {
   position: relative;
   font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   background: #373a47;
   color: white;
@@ -324,7 +345,7 @@ span::after {
 
 .Btnf::before,
 button::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -357,7 +378,7 @@ button::after {
 .BtnS {
   position: relative;
   font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 5% auto;
   cursor: pointer;
   border-radius: 8px;
@@ -369,7 +390,7 @@ button::after {
 
 .BtnS::before,
 button::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
