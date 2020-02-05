@@ -98,7 +98,7 @@ export default class App extends Component {
 
               <H1>Follow me on</H1>
               <a
-                href="https://www.linkedin.com/in/james-hutton-87a82b183/"
+                href="www.linkedin.com/in/jamesjhutton"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -123,44 +123,44 @@ export default class App extends Component {
         </div>
         <PageWrap>
           <Navbar />
-          <Element name= "AboutMe">
-          <About
-            ref={section => {
-              this.AboutMe = section;
-            }}
-          >
-            <AboutMe />
-          </About>
+          <Element name="AboutMe">
+            <About
+              ref={section => {
+                this.AboutMe = section;
+              }}
+            >
+              <AboutMe />
+            </About>
           </Element>
           <Element name="Projects">
-          <section
-            className="projects"
-            ref={section => {
-              this.Projects = section;
-            }}
-          >
-            <Projects />
-          </section>
+            <section
+              className="projects"
+              ref={section => {
+                this.Projects = section;
+              }}
+            >
+              <Projects />
+            </section>
           </Element>
           <Element name="Skills">
-          <section
-            className="skills"
-            ref={section => {
-              this.Skills = section;
-            }}
-          >
-            <Skills />
-          </section>
+            <section
+              className="skills"
+              ref={section => {
+                this.Skills = section;
+              }}
+            >
+              <Skills />
+            </section>
           </Element>
           <Element name="Contact">
-          <section
-            className="contact"
-            ref={section => {
-              this.Contact = section;
-            }}
-          >
-            <Contact />
-          </section>
+            <section
+              className="contact"
+              ref={section => {
+                this.Contact = section;
+              }}
+            >
+              <Contact />
+            </section>
           </Element>
           {/* <section>
             <Footer />
