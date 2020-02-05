@@ -79,6 +79,7 @@ const Image = styled.img`
   width: 30%;
   float: left;
   margin: 6% 0 3% 6%;
+  position: absolute;
   @media (max-width: 400px) {
     width: 80%;
     margin: 15% auto 5% auto;
@@ -98,6 +99,12 @@ const LogoDiv = styled.div`
 `
 
 const Div = styled.div`
+  width: 98%;
+  height: 357px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
   @media (max-width: 500px) {
     width: 100%;
     height: 418px;

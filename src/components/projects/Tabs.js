@@ -10,14 +10,21 @@ const Tabs = props => {
   return (
     <Div>
       <Popup
-        trigger={<button className="Btnf">Filter</button>}
-        position='bottom center'
-        on='hover'
+        trigger={<button className="Btnf">Filter By Category</button>}
+        position="bottom center"
+        on="hover"
         closeOnDocumentClick
         mouseLeaveDelay={0}
         mouseEnterDelay={0}
-        contentStyle={{ padding: '1%', border: 'none', display: 'flex', flexDirection: 'column', height: '300px'}}
-        arrow={false}>
+        contentStyle={{
+          padding: "1%",
+          border: "none",
+          display: "flex",
+          flexDirection: "column",
+          height: "300px"
+        }}
+        arrow={false}
+      >
         <Categories>
           {props.tabs.map((item, i) => (
             <Tab
@@ -57,7 +64,7 @@ const Div = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 3%;
+  margin: 14% 0 3% 0;
   @media (min-width: 401px) and (max-width: 700px) {
     margin: 0;
   }

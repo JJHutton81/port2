@@ -48,15 +48,12 @@ const Card = props => {
 export default Card;
 
 const CardBody = styled.div`
-  width: 300px;
+  width: 48%;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2% 1%;
   border: 1px solid #cccccc;
-  padding: 0.5%;
-  -webkit-box-shadow: 0px 5px 15px 1px #000000;
-  box-shadow: 0px 5px 15px 1px #000000;
   @media (min-width: 401px) and (max-width: 700px) {
     margin: 1%;
   }
@@ -82,7 +79,7 @@ const ImgCont = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 150px;
+  height: 303px;
 `;
 
 const Logo = styled.img`
