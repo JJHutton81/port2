@@ -1,20 +1,21 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Tabs from "./Tabs";
-import Cards from "./Cards";
+import Tabs from './Tabs';
+import Cards from './Cards';
+import ShadowScrollBar from '../scrollbars/ShadowScrollBar';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import ProjectsGraphix from "../../media/projectsGraphic.png";
+import ProjectsGraphix from '../../media/projectsGraphic.png';
 // import MidG2 from "../../media/midGraphic2.png";
-import MidG1 from "../../media/midGraphic1.png";
-import { tabData, cardData } from "../../ProjectData";
+import MidG1 from '../../media/midGraphic1.png';
+import { tabData, cardData } from '../../ProjectData';
 
 export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: "All",
+      selected: 'All',
       tabs: [],
       cards: []
     };
@@ -29,7 +30,7 @@ export default class Projects extends Component {
   };
 
   filterCards = () => {
-    if (this.state.selected === "All") {
+    if (this.state.selected === 'All') {
       return this.state.cards;
     } else {
       const cards = this.state.cards.filter(
@@ -42,9 +43,9 @@ export default class Projects extends Component {
   render() {
     return (
       <ProjectContainer>
-        <MidG1img src={MidG1} alt="Background Image" />
+        <MidG1img src={MidG1} alt='Background Image' />
         <LogoDiv>
-          <Image src={ProjectsGraphix} alt="Logo" />
+          <Image src={ProjectsGraphix} alt='Logo' />
         </LogoDiv>
         <div>
           <Tabs
@@ -53,8 +54,10 @@ export default class Projects extends Component {
             selectTabHandler={this.changeSelected}
           />
           <Div>
-            <Cards cards={this.filterCards()} />
-          </Div>  
+            <ShadowScrollBar autoHeight autoHeightMin={350} autoHeightMax={300}>
+              <Cards cards={this.filterCards()} />
+            </ShadowScrollBar>
+          </Div>
         </div>
       </ProjectContainer>
     );
@@ -96,18 +99,18 @@ const Image = styled.img`
 const LogoDiv = styled.div`
   width: 100%;
   display: flex;
-`
+`;
 
 const Div = styled.div`
-  width: 98%;
+  width: 72.5%;
   height: 357px;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  margin-left: 20px;
+  margin: 0 auto;
   @media (max-width: 500px) {
     width: 100%;
     height: 418px;
     overflow: auto;
   }
-`
+`;

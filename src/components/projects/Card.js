@@ -48,7 +48,7 @@ const Card = props => {
 export default Card;
 
 const CardBody = styled.div`
-  width: 48%;
+  width: 450px;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,6 @@ const Headline = styled.h2`
   font-family: "Roboto", sans-serif;
   margin: 1%;
   text-align: center;
-  text-shadow: -1px 1px 20px #fa1633;
   background: white;
   border-radius: 50%;
   width: 100%;
@@ -75,11 +74,12 @@ const Headline = styled.h2`
 
 const ImgCont = styled.div`
   width: 100%;
+  overflow: hidden;
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: 303px;
+  height: 307px;
 `;
 
 const Logo = styled.img`
