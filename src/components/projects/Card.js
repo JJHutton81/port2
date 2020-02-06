@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import { useSpring, animated as a } from 'react-spring';
+import React, { useState } from "react";
+import { useSpring, animated as a } from "react-spring";
+import ScrollAnimation from "react-animate-on-scroll";
+import css from "animate.css";
 
-import styled from 'styled-components';
-import Popup from 'reactjs-popup';
+import styled from "styled-components";
+import Popup from "reactjs-popup";
 
-import GitHub from '../../media/GitHub_Logo.png';
+import GitHub from "../../media/GitHub_Logo.png";
 
-import '../../App.css';
+import "../../App.css";
 
 const Card = props => {
   const [flipped, set] = useState(false);
@@ -16,42 +18,55 @@ const Card = props => {
     config: { mass: 5, tension: 500, friction: 80 }
   });
   return (
-    <CardBody
-      onMouseEnter={() => set(state => !state)}
-      onMouseLeave={() => set(state => !state)}>
-      <a.div
-        class='back'
-        style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
-        <Headline>{props.card.headline}</Headline>
-        <ImgCont>
-          <a href={props.card.plink} target='_blank' rel='noopener noreferrer'>
-            <Image src={props.card.img} alt='Project Screenshot' />
-          </a>
-        </ImgCont>
-      </a.div>
-      <a.div 
-        class='front'
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateX(180deg)`)
-        }}>
+    <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" delay={1000}>
+      <CardBody
+        onMouseEnter={() => set(state => !state)}
+        onMouseLeave={() => set(state => !state)}
+      >
+        <a.div
+          class="back"
+          style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+        >
+          <Headline>{props.card.headline}</Headline>
+          <ImgCont>
+            <a
+              href={props.card.plink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={props.card.img} alt="Project Screenshot" />
+            </a>
+          </ImgCont>
+        </a.div>
+        <a.div
+          class="front"
+          style={{
+            opacity,
+            transform: transform.interpolate(t => `${t} rotateX(180deg)`)
+          }}
+        >
           <Div>
-        <H3>{props.card.text}</H3>
-        <H4>{props.card.stack}</H4>
-        <Ul>
-          <Li>{props.card.bullet1}</Li>
-          <Li>{props.card.bullet2}</Li>
-          <Li>{props.card.bullet3}</Li>
-        </Ul>
-        <GitLink>
-          <H4>View repository on</H4>
-          <a href={props.card.rlink} target='_blank' rel='noopener noreferrer'>
-            <Logo className='GHLogo' src={GitHub} alt='Git Hub Logo' />
-          </a>
-          </GitLink>
-        </Div>
-      </a.div>
-    </CardBody>
+            <H3>{props.card.text}</H3>
+            <H4>{props.card.stack}</H4>
+            <Ul>
+              <Li>{props.card.bullet1}</Li>
+              <Li>{props.card.bullet2}</Li>
+              <Li>{props.card.bullet3}</Li>
+            </Ul>
+            <GitLink>
+              <H4>View repository on</H4>
+              <a
+                href={props.card.rlink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Logo className="GHLogo" src={GitHub} alt="Git Hub Logo" />
+              </a>
+            </GitLink>
+          </Div>
+        </a.div>
+      </CardBody>
+    </ScrollAnimation>
   );
 };
 
@@ -77,7 +92,7 @@ const Div = styled.div`
   background: white;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;                 
+  justify-content: center;
 `;
 
 const GitLink = styled.div`
@@ -86,12 +101,12 @@ const GitLink = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-`
+`;
 
 const Headline = styled.h2`
   font-weight: bold;
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 1%;
   text-align: center;
   background: white;
@@ -116,21 +131,21 @@ const Logo = styled.img`
 
 const H3 = styled.h3`
   font-size: 1.4rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   padding: 2%;
 `;
 
 const H4 = styled.h4`
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   width: 100%;
 `;
 
 const Li = styled.li`
   font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 `;
 
 const Ul = styled.ul`

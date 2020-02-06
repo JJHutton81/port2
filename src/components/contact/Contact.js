@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
+import css from "animate.css";
 
 import "../../App.css";
 
-import ContactGrapfix from '../../media/contactGraphic.png';
-import Foot from '../../media/footGraphic.png';
+import ContactGrapfix from "../../media/contactGraphic.png";
+import Foot from "../../media/footGraphic.png";
 
 export default class Contact extends Component {
   render() {
     return (
       <Body>
         <Div>
-          <ContactFX src={ContactGrapfix} alt='Logo' />
+          <ContactFX src={ContactGrapfix} alt="Logo" />
         </Div>
         <FormWrap>
           {/* <h1 className='ContactTitle'>
@@ -23,45 +25,74 @@ export default class Contact extends Component {
           </h1>
           <h1 className='ContactTitle'>Let's make something special.</h1> */}
           <Form
-            method='POST'
-            action='https://formspree.io/jjhutton81@gmail.com'>
-            <Input
-              type='email'
-              name='email'
-              placeholder='Enter Your Email'
-              className='form-input'
-            />
-            <Textarea
-              name='message'
-              contenteditable='true'
-              placeholder="What's on your mind?"
-              wrap='soft'
-            />
-            <div className="btnWrap">
-              <button type='submit' className='BtnS'>
-                Submit
-              </button>
-            </div>
+            method="POST"
+            action="https://formspree.io/jjhutton81@gmail.com"
+          >
+            <ScrollAnimation
+              animateIn="fadeInLeft"
+              animateOut="fadeOutRight"
+              delay={1000}
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center"
+              }}
+            >
+              <Input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                className="form-input"
+              />
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInRight"
+              animateOut="fadeOutLeft"
+              delay={1000}
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center"
+              }}
+            >
+              <Textarea
+                name="message"
+                contenteditable="true"
+                placeholder="What's on your mind?"
+                wrap="soft"
+              />
+            </ScrollAnimation>
+            {/* <ScrollAnimation
+              animateIn="bounceInUp"
+              animateOut="fadeOutDown"
+              delay={500}
+            > */}
+              <div className="btnWrap">
+                <button type="submit" className="BtnS">
+                  Submit
+                </button>
+              </div>
+            {/* </ScrollAnimation> */}
           </Form>
         </FormWrap>
-        <Footer src={Foot} alt='Logo' />
+        <Footer src={Foot} alt="Logo" />
       </Body>
     );
   }
 }
 
 const Body = styled.div`
-width: 100%;
-height: 100vh;
-display: flex;
-flex-direction: column;
-overflow: hidden;
-`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+`;
 
 const Div = styled.div`
-width: 100%;
-display: flex;
-`
+  width: 100%;
+  display: flex;
+`;
 
 const ContactFX = styled.img`
   width: 30%;
@@ -81,14 +112,14 @@ const ContactFX = styled.img`
 `;
 
 const Form = styled.form`
-display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`;
 
 const Input = styled.input`
-width: 50%;
+width: 60%;
 padding: 1%;
 border-radius: 8px;
 height: 30px
@@ -100,36 +131,36 @@ margin-top: 3%;
 @media (max-width: 1000px) {
   width: 90%;
 }
-`
+`;
 
 const Textarea = styled.textarea`
-width: 50%;
-padding: 1.5%;
-border-radius: 8px;
-margin-top: 1.5%;
-height: 20vh;
-font-family: 'Roboto', sans-serif;
-font-size: 1.2rem;
-border-style: inset;
-border: 2px solid #001f3f;
-@media (max-width: 1000px) {
-  width: 90%;
-  height: 200px;
-}
-`
+  width: 60%;
+  padding: 1.5%;
+  border-radius: 8px;
+  margin-top: 1.5%;
+  height: 20vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  border-style: inset;
+  border: 2px solid #001f3f;
+  @media (max-width: 1000px) {
+    width: 90%;
+    height: 200px;
+  }
+`;
 
 const Footer = styled.img`
-width: 100%;
-position: absolute;
-z-index: -1;
-height: 100vh;
-`
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+`;
 
 const FormWrap = styled.div`
-display: flex;
-margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
   width: 50%;
   @media (max-width: 1000px) {
     width: 100%;
   }
-`
+`;

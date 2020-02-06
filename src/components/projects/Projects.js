@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import css from "animate.css";
 
-import Tabs from './Tabs';
-import Cards from './Cards';
-import ShadowScrollBar from '../scrollbars/ShadowScrollBar';
+import Tabs from "./Tabs";
+import Cards from "./Cards";
+import ShadowScrollBar from "../scrollbars/ShadowScrollBar";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import ProjectsGraphix from '../../media/projectsGraphic.png';
+import ProjectsGraphix from "../../media/projectsGraphic.png";
 // import MidG2 from "../../media/midGraphic2.png";
-import MidG1 from '../../media/midGraphic1.png';
-import { tabData, cardData } from '../../ProjectData';
+import MidG1 from "../../media/midGraphic1.png";
+import { tabData, cardData } from "../../ProjectData";
 
 export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: 'All',
+      selected: "All",
       tabs: [],
       cards: []
     };
@@ -30,7 +32,7 @@ export default class Projects extends Component {
   };
 
   filterCards = () => {
-    if (this.state.selected === 'All') {
+    if (this.state.selected === "All") {
       return this.state.cards;
     } else {
       const cards = this.state.cards.filter(
@@ -43,9 +45,9 @@ export default class Projects extends Component {
   render() {
     return (
       <ProjectContainer>
-        <MidG1img src={MidG1} alt='Background Image' />
+        <MidG1img src={MidG1} alt="Background Image" />
         <LogoDiv>
-          <Image src={ProjectsGraphix} alt='Logo' />
+          <Image src={ProjectsGraphix} alt="Logo" />
         </LogoDiv>
         <div>
           <Tabs
@@ -53,22 +55,25 @@ export default class Projects extends Component {
             selectedTab={this.state.selected}
             selectTabHandler={this.changeSelected}
           />
-          <Div>
-            <ShadowScrollBar
-              autoHeight
-              autoHeightMin={350}
-              autoHeightMax={360}
-              hideTracksWhenNotNeeded= {true}
-              renderThumbHorizontal={props => (
-                <div
-                  {...props}
-                  className='thumb-horizontal'
-                  style={{ display: 'none' }}
-                />
-              )}>
-              <Cards cards={this.filterCards()} />
-            </ShadowScrollBar>
-          </Div>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={1000}>
+            <Div>
+              <ShadowScrollBar
+                autoHeight
+                autoHeightMin={350}
+                autoHeightMax={360}
+                hideTracksWhenNotNeeded={true}
+                renderThumbHorizontal={props => (
+                  <div
+                    {...props}
+                    className="thumb-horizontal"
+                    style={{ display: "none" }}
+                  />
+                )}
+              >
+                <Cards cards={this.filterCards()} />
+              </ShadowScrollBar>
+            </Div>
+          </ScrollAnimation>
         </div>
       </ProjectContainer>
     );

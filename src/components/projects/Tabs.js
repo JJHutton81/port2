@@ -1,41 +1,45 @@
-import React from 'react';
-import Popup from 'reactjs-popup';
+import React from "react";
+import Popup from "reactjs-popup";
+import ScrollAnimation from "react-animate-on-scroll";
+import css from "animate.css";
 
-import Tab from './Tab';
-import '../../App.css';
+import Tab from "./Tab";
+import "../../App.css";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Tabs = props => {
   return (
     <Div>
-      <Popup
-        trigger={<button className="Btnf">Filter By Category</button>}
-        position="bottom center"
-        on="hover"
-        closeOnDocumentClick
-        mouseLeaveDelay={0}
-        mouseEnterDelay={0}
-        contentStyle={{
-          padding: "1%",
-          border: "none",
-          display: "flex",
-          flexDirection: "column",
-          height: "300px"
-        }}
-        arrow={false}
-      >
-        <Categories>
-          {props.tabs.map((item, i) => (
-            <Tab
-              key={i}
-              tab={item}
-              selectedTab={props.selectedTab}
-              selectTabHandler={props.selectTabHandler}
-            />
-          ))}
-        </Categories>
-      </Popup>
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={1000}>
+        <Popup
+          trigger={<button className="Btnf">Filter By Category</button>}
+          position="bottom center"
+          on="hover"
+          closeOnDocumentClick
+          mouseLeaveDelay={0}
+          mouseEnterDelay={0}
+          contentStyle={{
+            padding: "1%",
+            border: "none",
+            display: "flex",
+            flexDirection: "column",
+            height: "300px"
+          }}
+          arrow={false}
+        >
+          <Categories>
+            {props.tabs.map((item, i) => (
+              <Tab
+                key={i}
+                tab={item}
+                selectedTab={props.selectedTab}
+                selectTabHandler={props.selectTabHandler}
+              />
+            ))}
+          </Categories>
+        </Popup>
+      </ScrollAnimation>
     </Div>
   );
 };
@@ -48,7 +52,7 @@ const Categories = styled.div`
   margin: 2% auto;
   display: flex;
   &:last-child {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     justify-content: space-evenly;
     font-weight: bold;
@@ -68,4 +72,4 @@ const Div = styled.div`
   @media (min-width: 401px) and (max-width: 700px) {
     margin: 0;
   }
-`
+`;

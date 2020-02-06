@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
+import css from "animate.css";
 
 import "./skills.css";
 import "../../App.css";
@@ -25,28 +27,43 @@ export default class Skills extends Component {
       <Body>
         <MidG2img src={MidG2} alt="Background Image" />
         <SkillsFX src={SkillFX} alt="Logo" />
+
         <DivTextDeck>
-        <Text style={{ display: this.state.isToggle ? "none" : "flex" }}>
-          <P>
-            I was contemplating how I would show off my skillset. I could just
-            list them off, but that would be boring. I could make a chart, but
-            that’s so common it might as well be boring. So why not make it a
-            little game? That’s way more fun.{" "}
-          </P>
-          <H2>
-            To play simply click and hold on each card, then quickly drag to the
-            left or right and release. Swipe left or right if you’re on a
-            touchscreen device. Click the button below to get started.{" "}
-          </H2>
-          <Div>
-            <button className="btn" onClick={this.handleClick}>
-              Dismiss
-            </button>
-          </Div>
-        </Text>
-        <DeckWrap>
-          <SkillsDeck />
-        </DeckWrap>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={500}>
+            <Text style={{ display: this.state.isToggle ? "none" : "flex" }}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOut="fadeOut"
+                delay={1000}
+              >
+                <P>
+                  I was contemplating how I would show off my skillset. I could
+                  just list them off, but that would be boring. I could make a
+                  chart, but that’s so common it might as well be boring. So why
+                  not make it a little game? That’s way more fun.{" "}
+                </P>
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOut="fadeOut"
+                delay={1500}
+              >
+                <H2>
+                  To play simply click and hold on each card, then quickly drag
+                  to the left or right and release. Swipe left or right if
+                  you’re on a touchscreen device.{" "}
+                </H2>
+              </ScrollAnimation>
+              <Div>
+                <button className="btn" onClick={this.handleClick}>
+                  Dismiss
+                </button>
+              </Div>
+            </Text>
+          </ScrollAnimation>
+          <DeckWrap>
+            <SkillsDeck />
+          </DeckWrap>
         </DivTextDeck>
       </Body>
     );
@@ -65,7 +82,7 @@ const DivTextDeck = styled.div`
   justify-content: space evenly;
   position: absolute;
   margin-top: 10%;
-`
+`;
 
 const MidG2img = styled.img`
   position: absolute;
@@ -94,11 +111,11 @@ const SkillsFX = styled.img`
 
 const Text = styled.div`
   align-self: flex-start;
-  margin: 6% 0 0 8%;
-  width: 25%;
+  margin: 10% 0 0 13%;
+  width: 27%;
   background-image: url(${Paper});
   background-size: 100% 100%;
-  padding: 2%;
+  padding: 3%;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
