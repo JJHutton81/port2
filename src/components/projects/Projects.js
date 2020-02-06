@@ -54,7 +54,18 @@ export default class Projects extends Component {
             selectTabHandler={this.changeSelected}
           />
           <Div>
-            <ShadowScrollBar autoHeight autoHeightMin={350} autoHeightMax={300}>
+            <ShadowScrollBar
+              autoHeight
+              autoHeightMin={350}
+              autoHeightMax={360}
+              hideTracksWhenNotNeeded= {true}
+              renderThumbHorizontal={props => (
+                <div
+                  {...props}
+                  className='thumb-horizontal'
+                  style={{ display: 'none' }}
+                />
+              )}>
               <Cards cards={this.filterCards()} />
             </ShadowScrollBar>
           </Div>

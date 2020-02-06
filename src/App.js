@@ -11,7 +11,7 @@ import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
 // import Footer from './components/footer/Footer';
-import ColoredScrollBars from './components/scrollbars/ShadowScrollBar';
+// import ColoredScrollBars from './components/scrollbars/ShadowScrollBar';
 
 import LiLogo from "./media/LI-Logo.png";
 import GhLogo from "./media/github.png";
@@ -124,11 +124,11 @@ export default class App extends Component {
         </div>
         <PageWrap>
           <Navbar />
-          <ColoredScrollBars
+          {/* <ColoredScrollBars
           autoHeight
           autoHeightMin={1000}
           autoHeightMax={200}
-          >
+          > */}
           <Element name="AboutMe">
             <About
               ref={section => {
@@ -171,7 +171,7 @@ export default class App extends Component {
           {/* <section>
             <Footer />
           </section> */}
-          </ColoredScrollBars>
+          {/* </ColoredScrollBars> */}
         </PageWrap>
       </div>
     );
