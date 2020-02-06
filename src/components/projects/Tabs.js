@@ -11,7 +11,11 @@ import styled from "styled-components";
 const Tabs = props => {
   return (
     <Div>
-      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={1000}>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+        delay={1000}
+      >
         <Popup
           trigger={<button className="Btnf">Filter By Category</button>}
           position="bottom center"
@@ -67,6 +71,8 @@ const Categories = styled.div`
 const Div = styled.div`
   display: flex;
   width: 100%;
+  position: relative;
+  z-index: 2;
   justify-content: center;
   margin: 14% 0 3% 0;
   @media (min-width: 401px) and (max-width: 700px) {

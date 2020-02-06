@@ -28,6 +28,8 @@ export default class AboutMe extends Component {
               animateIn="bounceInLeft"
               animateOut="bounceOutRight"
               delay={1000}
+              style={{    position= 'inherit;',
+    zIndex= '2;'}}
             >
               <Head src={Headshot} alt="Headshot photo of James Hutton" />
             </ScrollAnimation>
