@@ -96,7 +96,7 @@ export default class App extends Component {
               >
                 Contact
               </h1>
-
+{/* 
               <H1>Follow me on</H1>
               <a
                 href="www.linkedin.com/in/jamesjhutton"
@@ -118,7 +118,7 @@ export default class App extends Component {
                 rel="noopener noreferrer"
               >
                 <Image src={TLogo} alt="Twitter logo" />
-              </a>
+              </a> */}
             </div>
           </Menu>
         </div>
