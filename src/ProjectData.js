@@ -83,16 +83,16 @@ export const cardData = [
     bullet1: 'Solo build',
     bullet2: 'Hosted on Netlify'
   },
-  {
-    headline: 'Swapi API Project',
-    tab: 'API',
-    img: '/assets/starwars.jpg',
-    plink: 'https://reactwarsapi.netlify.com',
-    rlink: 'https://github.com/FreeKeyBoy/Sprint-Challenge-React-Wars',
-    text:
-      'This is a ReactJS based app that was made using the swapi Star Wars API. I used pagination to sort out the results.',
-    stack: 'Built using: ReactJS, CSS',
-    bullet1: 'Solo build',
-    bullet2: 'Hosted on Netlify'
-  }
+  // {
+  //   headline: 'Swapi API Project',
+  //   tab: 'API',
+  //   img: '/assets/starwars.jpg',
+  //   plink: 'https://reactwarsapi.netlify.com',
+  //   rlink: 'https://github.com/FreeKeyBoy/Sprint-Challenge-React-Wars',
+  //   text:
+  //     'This is a ReactJS based app that was made using the swapi Star Wars API. I used pagination to sort out the results.',
+  //   stack: 'Built using: ReactJS, CSS',
+  //   bullet1: 'Solo build',
+  //   bullet2: 'Hosted on Netlify'
+  // }
 ];
