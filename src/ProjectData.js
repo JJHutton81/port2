@@ -60,29 +60,29 @@ export const cardData = [
     bullet2: 'Hosted on Netlify',
     bullet3: 'Uses stateful components'
   },
-  {
-    headline: 'JavaScript UI Project',
-    tab: 'JavaScript',
-    img: '/assets/newsfeed.jpg',
-    plink: 'https://newsfeedcomp.netlify.com',
-    rlink: 'https://github.com/FreeKeyBoy/Newsfeed-Components',
-    text: 'This is a JavaScript project I made using Less, and HTML.',
-    stack: 'Built using: ES6, HTML, CSS',
-    bullet1: 'Solo build',
-    bullet2: 'Hosted on Netlify'
-  },
-  {
-    headline: 'Tabs Project JS',
-    tab: 'JavaScript',
-    img: '/assets/tabs.jpg',
-    plink: 'https://tabsproject.netlify.com',
-    rlink: 'https://github.com/FreeKeyBoy/Tabs-Components',
-    text:
-      'This is a JavaScript project I made using Less, and HTML. Enjoy my favorite Douglass Adams quotes.',
-    stack: 'Built using: ES6, HTML, CSS',
-    bullet1: 'Solo build',
-    bullet2: 'Hosted on Netlify'
-  },
+  // {
+  //   headline: 'JavaScript UI Project',
+  //   tab: 'JavaScript',
+  //   img: '/assets/newsfeed.jpg',
+  //   plink: 'https://newsfeedcomp.netlify.com',
+  //   rlink: 'https://github.com/FreeKeyBoy/Newsfeed-Components',
+  //   text: 'This is a JavaScript project I made using Less, and HTML.',
+  //   stack: 'Built using: ES6, HTML, CSS',
+  //   bullet1: 'Solo build',
+  //   bullet2: 'Hosted on Netlify'
+  // },
+  // {
+  //   headline: 'Tabs Project JS',
+  //   tab: 'JavaScript',
+  //   img: '/assets/tabs.jpg',
+  //   plink: 'https://tabsproject.netlify.com',
+  //   rlink: 'https://github.com/FreeKeyBoy/Tabs-Components',
+  //   text:
+  //     'This is a JavaScript project I made using Less, and HTML. Enjoy my favorite Douglass Adams quotes.',
+  //   stack: 'Built using: ES6, HTML, CSS',
+  //   bullet1: 'Solo build',
+  //   bullet2: 'Hosted on Netlify'
+  // },
   // {
   //   headline: 'Swapi API Project',
   //   tab: 'API',
