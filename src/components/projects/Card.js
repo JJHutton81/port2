@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated as a } from "react-spring";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import css from "animate.css";
 
 import styled from "styled-components";
@@ -18,7 +18,7 @@ const Card = props => {
     config: { mass: 5, tension: 500, friction: 80 }
   });
   return (
-    <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" delay={1000}>
+    // <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" delay={1000}>
       <CardBody
         onMouseEnter={() => set(state => !state)}
         onMouseLeave={() => set(state => !state)}
@@ -66,7 +66,7 @@ const Card = props => {
           </Div>
         </a.div>
       </CardBody>
-    </ScrollAnimation>
+    // </ScrollAnimation>
   );
 };
 

@@ -2,8 +2,8 @@ export const tabData = [
   'All',
   'React',
   'Redux',
-  // 'API', 
-  // 'JavaScript'
+  'API', 
+  'JavaScript'
 ];
 
 export const cardData = [
@@ -60,39 +60,39 @@ export const cardData = [
     bullet2: 'Hosted on Netlify',
     bullet3: 'Uses stateful components'
   },
-  // {
-  //   headline: 'JavaScript UI Project',
-  //   tab: 'JavaScript',
-  //   img: '/assets/newsfeed.jpg',
-  //   plink: 'https://newsfeedcomp.netlify.com',
-  //   rlink: 'https://github.com/FreeKeyBoy/Newsfeed-Components',
-  //   text: 'This is a JavaScript project I made using Less, and HTML.',
-  //   stack: 'Built using: ES6, HTML, CSS',
-  //   bullet1: 'Solo build',
-  //   bullet2: 'Hosted on Netlify'
-  // },
-  // {
-  //   headline: 'Tabs Project JS',
-  //   tab: 'JavaScript',
-  //   img: '/assets/tabs.jpg',
-  //   plink: 'https://tabsproject.netlify.com',
-  //   rlink: 'https://github.com/FreeKeyBoy/Tabs-Components',
-  //   text:
-  //     'This is a JavaScript project I made using Less, and HTML. Enjoy my favorite Douglass Adams quotes.',
-  //   stack: 'Built using: ES6, HTML, CSS',
-  //   bullet1: 'Solo build',
-  //   bullet2: 'Hosted on Netlify'
-  // },
-  // {
-  //   headline: 'Swapi API Project',
-  //   tab: 'API',
-  //   img: '/assets/starwars.jpg',
-  //   plink: 'https://reactwarsapi.netlify.com',
-  //   rlink: 'https://github.com/FreeKeyBoy/Sprint-Challenge-React-Wars',
-  //   text:
-  //     'This is a ReactJS based app that was made using the swapi Star Wars API. I used pagination to sort out the results.',
-  //   stack: 'Built using: ReactJS, CSS',
-  //   bullet1: 'Solo build',
-  //   bullet2: 'Hosted on Netlify'
-  // }
+  {
+    headline: 'JavaScript UI Project',
+    tab: 'JavaScript',
+    img: '/assets/newsfeed.jpg',
+    plink: 'https://newsfeedcomp.netlify.com',
+    rlink: 'https://github.com/FreeKeyBoy/Newsfeed-Components',
+    text: 'This is a JavaScript project I made using Less, and HTML.',
+    stack: 'Built using: ES6, HTML, CSS',
+    bullet1: 'Solo build',
+    bullet2: 'Hosted on Netlify'
+  },
+  {
+    headline: 'Tabs Project JS',
+    tab: 'JavaScript',
+    img: '/assets/tabs.jpg',
+    plink: 'https://tabsproject.netlify.com',
+    rlink: 'https://github.com/FreeKeyBoy/Tabs-Components',
+    text:
+      'This is a JavaScript project I made using Less, and HTML. Enjoy my favorite Douglass Adams quotes.',
+    stack: 'Built using: ES6, HTML, CSS',
+    bullet1: 'Solo build',
+    bullet2: 'Hosted on Netlify'
+  },
+  {
+    headline: 'Swapi API Project',
+    tab: 'API',
+    img: '/assets/starwars.jpg',
+    plink: 'https://reactwarsapi.netlify.com',
+    rlink: 'https://github.com/FreeKeyBoy/Sprint-Challenge-React-Wars',
+    text:
+      'This is a ReactJS based app that was made using the swapi Star Wars API. I used pagination to sort out the results.',
+    stack: 'Built using: ReactJS, CSS',
+    bullet1: 'Solo build',
+    bullet2: 'Hosted on Netlify'
+  }
 ];

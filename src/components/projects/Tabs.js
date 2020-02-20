@@ -1,6 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import css from "animate.css";
 
 import Tab from "./Tab";
@@ -11,11 +11,11 @@ import styled from "styled-components";
 const Tabs = props => {
   return (
     <Div>
-      <ScrollAnimation
+      {/* <ScrollAnimation
         animateIn="fadeIn"
         animateOut="fadeOut"
         delay={1000}
-      >
+      > */}
         <Popup
           trigger={<button className="Btnf">Filter By Category</button>}
           position="bottom center"
@@ -43,7 +43,7 @@ const Tabs = props => {
             ))}
           </Categories>
         </Popup>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
     </Div>
   );
 };

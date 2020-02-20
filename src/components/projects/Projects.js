@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import css from "animate.css";
 
 import Tabs from "./Tabs";
@@ -55,7 +55,7 @@ export default class Projects extends Component {
             selectedTab={this.state.selected}
             selectTabHandler={this.changeSelected}
           />
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={1000}>
+          {/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={1000}> */}
             <Div>
               <ShadowScrollBar
                 autoHeight
@@ -73,7 +73,7 @@ export default class Projects extends Component {
                 <Cards cards={this.filterCards()} />
               </ShadowScrollBar>
             </Div>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
       </ProjectContainer>
     );
