@@ -2,8 +2,8 @@ export const tabData = [
   'All',
   'React',
   'Redux',
-  'API', 
-  'JavaScript'
+  // 'API', 
+  // 'JavaScript'
 ];
 
 export const cardData = [
