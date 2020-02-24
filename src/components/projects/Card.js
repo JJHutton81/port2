@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { useSpring, animated as a } from "react-spring";
 // import ScrollAnimation from "react-animate-on-scroll";
-import css from "animate.css";
 
 import styled from "styled-components";
-import Popup from "reactjs-popup";
 
 import GitHub from "../../media/GitHub_Logo.png";
 
@@ -24,7 +22,7 @@ const Card = props => {
         onMouseLeave={() => set(state => !state)}
       >
         <a.div
-          class="back"
+          className="back"
           style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
         >
           <Headline>{props.card.headline}</Headline>
@@ -39,7 +37,7 @@ const Card = props => {
           </ImgCont>
         </a.div>
         <a.div
-          class="front"
+          className="front"
           style={{
             opacity,
             transform: transform.interpolate(t => `${t} rotateX(180deg)`)
