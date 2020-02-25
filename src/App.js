@@ -5,17 +5,10 @@ import { Element } from "react-scroll";
 import scrollToComponent from "react-scroll-to-component";
 import styled from "styled-components";
 
-// import Landing from './components/landing/Landing';
 import AboutMe from "./components/aboutMe/AboutMe";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
-// import Footer from './components/footer/Footer';
-// import ColoredScrollBars from './components/scrollbars/ShadowScrollBar';
-
-import LiLogo from "./media/LI-Logo.png";
-import GhLogo from "./media/github.png";
-import TLogo from "./media/twitter.png";
 
 import "./App.css";
 import Navbar from "./components/nav/Navbar";
