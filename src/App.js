@@ -89,39 +89,11 @@ export default class App extends Component {
               >
                 Contact
               </h1>
-{/* 
-              <H1>Follow me on</H1>
-              <a
-                href="www.linkedin.com/in/jamesjhutton"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image src={LiLogo} alt="Linked in logo" />
-              </a>
-              <a
-                href="https://github.com/FreeKeyBoy?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image src={GhLogo} alt="Github logo" />
-              </a>
-              <a
-                href="https://twitter.com/JamesHu91877325"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image src={TLogo} alt="Twitter logo" />
-              </a> */}
             </div>
           </Menu>
         </div>
         <PageWrap>
           <Navbar />
-          {/* <ColoredScrollBars
-          autoHeight
-          autoHeightMin={1000}
-          autoHeightMax={200}
-          > */}
           <Element name="AboutMe">
             <About
               ref={section => {
@@ -194,7 +166,7 @@ const PageWrap = styled.div`
 `;
 
 const About = styled.section`
-    @media (max-width: 500px) {
+  @media (max-width: 500px) {
     margin-bottom: 41%;
   }
 `;
