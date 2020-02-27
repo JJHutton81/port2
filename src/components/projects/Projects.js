@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import ScrollAnimation from "react-animate-on-scroll";
 import css from "animate.css";
 
 import Tabs from "./Tabs";
@@ -9,7 +8,6 @@ import ShadowScrollBar from "../scrollbars/ShadowScrollBar";
 import styled from "styled-components";
 
 import ProjectsGraphix from "../../media/projectsGraphic.png";
-// import MidG2 from "../../media/midGraphic2.png";
 import MidG1 from "../../media/midGraphic1.png";
 import { tabData, cardData } from "../../ProjectData";
 
@@ -55,25 +53,23 @@ export default class Projects extends Component {
             selectedTab={this.state.selected}
             selectTabHandler={this.changeSelected}
           />
-          {/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={1000}> */}
-            <Div>
-              <ShadowScrollBar
-                autoHeight
-                autoHeightMin={350}
-                autoHeightMax={360}
-                hideTracksWhenNotNeeded={true}
-                renderThumbHorizontal={props => (
-                  <div
-                    {...props}
-                    className="thumb-horizontal"
-                    style={{ display: "none" }}
-                  />
-                )}
-              >
-                <Cards cards={this.filterCards()} />
-              </ShadowScrollBar>
-            </Div>
-          {/* </ScrollAnimation> */}
+          <Div>
+            <ShadowScrollBar
+              autoHeight
+              autoHeightMin={350}
+              autoHeightMax={360}
+              hideTracksWhenNotNeeded={true}
+              renderThumbHorizontal={props => (
+                <div
+                  {...props}
+                  className="thumb-horizontal"
+                  style={{ display: "none" }}
+                />
+              )}
+            >
+              <Cards cards={this.filterCards()} />
+            </ShadowScrollBar>
+          </Div>
         </div>
       </ProjectContainer>
     );
