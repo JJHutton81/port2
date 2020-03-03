@@ -16,14 +16,6 @@ export default class Contact extends Component {
           <ContactFX src={ContactGrapfix} alt="Logo" />
         </Div>
         <FormWrap>
-          {/* <h1 className='ContactTitle'>
-            This site is under almost constant construction. Check back often
-            for more clever little transitions, animations, and projects.{' '}
-          </h1>
-          <h1 className='ContactTitle'>
-            Do you have any questions, comments, or want to work with me?
-          </h1>
-          <h1 className='ContactTitle'>Let's make something special.</h1> */}
           <Form
             method="POST"
             action="https://formspree.io/jjhutton81@gmail.com"
