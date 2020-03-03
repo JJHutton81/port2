@@ -54,17 +54,11 @@ export default class Contact extends Component {
                 wrap="soft"
               />
             </ScrollAnimation>
-            {/* <ScrollAnimation
-              animateIn="bounceInUp"
-              animateOut="fadeOutDown"
-              delay={500}
-            > */}
-              <div className="btnWrap">
-                <button type="submit" className="BtnS">
-                  Submit
-                </button>
-              </div>
-            {/* </ScrollAnimation> */}
+            <div className="btnWrap">
+              <button type="submit" className="BtnS">
+                Submit
+              </button>
+            </div>
           </Form>
         </FormWrap>
         <Footer src={Foot} alt="Logo" />
