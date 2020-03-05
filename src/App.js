@@ -133,10 +133,6 @@ export default class App extends Component {
               <Contact />
             </section>
           </Element>
-          {/* <section>
-            <Footer />
-          </section> */}
-          {/* </ColoredScrollBars> */}
         </PageWrap>
       </div>
     );
