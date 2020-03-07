@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useSpring, animated as a } from "react-spring";
-// import ScrollAnimation from "react-animate-on-scroll";
 
 import styled from "styled-components";
 
@@ -16,55 +15,49 @@ const Card = props => {
     config: { mass: 5, tension: 500, friction: 80 }
   });
   return (
-    // <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut" delay={1000}>
-      <CardBody
-        onMouseEnter={() => set(state => !state)}
-        onMouseLeave={() => set(state => !state)}
+    <CardBody
+      onMouseEnter={() => set(state => !state)}
+      onMouseLeave={() => set(state => !state)}
+    >
+      <a.div
+        className="back"
+        style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
       >
-        <a.div
-          className="back"
-          style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
-        >
-          <Headline>{props.card.headline}</Headline>
-          <ImgCont>
+        <Headline>{props.card.headline}</Headline>
+        <ImgCont>
+          <a href={props.card.plink} target="_blank" rel="noopener noreferrer">
+            <Image src={props.card.img} alt="Project Screenshot" />
+          </a>
+        </ImgCont>
+      </a.div>
+      <a.div
+        className="front"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateX(180deg)`)
+        }}
+      >
+        <Div>
+          <H3>{props.card.text}</H3>
+          <H4>{props.card.stack}</H4>
+          <Ul>
+            <Li>{props.card.bullet1}</Li>
+            <Li>{props.card.bullet2}</Li>
+            <Li>{props.card.bullet3}</Li>
+          </Ul>
+          <GitLink>
+            <H4>View repository on</H4>
             <a
-              href={props.card.plink}
+              href={props.card.rlink}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={props.card.img} alt="Project Screenshot" />
+              <Logo className="GHLogo" src={GitHub} alt="Git Hub Logo" />
             </a>
-          </ImgCont>
-        </a.div>
-        <a.div
-          className="front"
-          style={{
-            opacity,
-            transform: transform.interpolate(t => `${t} rotateX(180deg)`)
-          }}
-        >
-          <Div>
-            <H3>{props.card.text}</H3>
-            <H4>{props.card.stack}</H4>
-            <Ul>
-              <Li>{props.card.bullet1}</Li>
-              <Li>{props.card.bullet2}</Li>
-              <Li>{props.card.bullet3}</Li>
-            </Ul>
-            <GitLink>
-              <H4>View repository on</H4>
-              <a
-                href={props.card.rlink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Logo className="GHLogo" src={GitHub} alt="Git Hub Logo" />
-              </a>
-            </GitLink>
-          </Div>
-        </a.div>
-      </CardBody>
-    // </ScrollAnimation>
+          </GitLink>
+        </Div>
+      </a.div>
+    </CardBody>
   );
 };
 
