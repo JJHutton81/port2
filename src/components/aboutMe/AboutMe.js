@@ -21,8 +21,6 @@ export default class AboutMe extends Component {
         <HeadGraphic src={HeadGrapix} alt="Logo" />
         <GraphicWrap>
           <AboutFX src={About} alt="Logo" />
-
-          {/* <NeedleFX src={Needle} alt="Space Needle" /> */}
           <TextWrap>
             <ScrollAnimation
               animateIn="bounceInLeft"
