@@ -104,9 +104,7 @@ const SkillsFX = styled.img`
     margin: 0% auto 5% auto;
     width: 80%;
   }
-  @media (min-width: 701px) and (max-width: 1000px) {
-    width: 40%;
-  }
+
 `;
 
 const Text = styled.div`
