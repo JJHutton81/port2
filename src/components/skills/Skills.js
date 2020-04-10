@@ -9,6 +9,7 @@ import "../../App.css";
 import SkillFX from "../../media/skillsGraphic.png";
 import Paper from "../../media/paper.png";
 import MidG2 from "../../media/midGraphic2.png";
+import Rainier from "../../media/Rainier.png";
 
 import SkillsDeck from "./SkillsDeck";
 import Rain from "../rain/Rain";
@@ -27,6 +28,7 @@ export default class Skills extends Component {
     return (
       <Body>
         <Rain />
+        <Rainierimg src={Rainier} alt="Mount Rainier" />
         <MidG2img src={MidG2} alt="Background Image" />
         <SkillsFX src={SkillFX} alt="Logo" />
 
@@ -106,7 +108,6 @@ const SkillsFX = styled.img`
     margin: 0% auto 5% auto;
     width: 80%;
   }
-
 `;
 
 const Text = styled.div`
@@ -192,4 +193,11 @@ const Div = styled.div`
   @media (max-width: 500px) {
     width: 100%;
   }
+`;
+
+const Rainierimg = styled.img`
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  bottom: 360px;
 `;
