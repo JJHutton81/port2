@@ -100,6 +100,7 @@ const SkillsFX = styled.img`
   float: left;
   margin: 6% 0 0% 6%;
   align-self: flex-start;
+  position: absolute;
   @media (max-width: 400px) {
     width: 80%;
     margin: 15% auto 5% auto;
