@@ -11,6 +11,7 @@ import Paper from "../../media/paper.png";
 import MidG2 from "../../media/midGraphic2.png";
 
 import SkillsDeck from "./SkillsDeck";
+import Rain from "../rain/Rain";
 
 export default class Skills extends Component {
   constructor(props) {
@@ -25,6 +26,7 @@ export default class Skills extends Component {
   render() {
     return (
       <Body>
+        <Rain />
         <MidG2img src={MidG2} alt="Background Image" />
         <SkillsFX src={SkillFX} alt="Logo" />
 

@@ -7,6 +7,8 @@ import ShadowScrollBar from "../scrollbars/ShadowScrollBar";
 
 import styled from "styled-components";
 
+import Rain from "../rain/Rain";
+
 import ProjectsGraphix from "../../media/projectsGraphic.png";
 import MidG1 from "../../media/midGraphic1.png";
 import { tabData, cardData } from "../../ProjectData";
@@ -43,7 +45,7 @@ export default class Projects extends Component {
   render() {
     return (
       <ProjectContainer>
-        <MidG1img src={MidG1} alt="Background Image" />
+        <Rain />
         <LogoDiv>
           <Image src={ProjectsGraphix} alt="Logo" />
         </LogoDiv>
