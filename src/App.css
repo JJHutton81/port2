@@ -430,3 +430,7 @@ button::after {
 .front {
   position: absolute;
 }
+
+#App {
+  background-image: url("./media/rain-drops.png");
+}

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 import css from "animate.css";
 
-import HeadGrapix from "../../media/Rainier.png";
 import About from "../../media/aboutMeGraphic.png";
 import Headshot from "../../media/headshot.jpg";
 import Needle from "../../media/needle.png";
@@ -18,7 +17,6 @@ export default class AboutMe extends Component {
             passion for all things front-end
           </H1>
         </Title>
-        <HeadGraphic src={HeadGrapix} alt="Logo" />
         <GraphicWrap>
           <AboutFX src={About} alt="Logo" />
           <TextWrap>

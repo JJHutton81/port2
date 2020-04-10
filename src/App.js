@@ -9,15 +9,18 @@ import AboutMe from "./components/aboutMe/AboutMe";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
+import Navbar from "./components/nav/Navbar";
+
+import Rain from "./components/rain/Rain";
 
 import "./App.css";
-import Navbar from "./components/nav/Navbar";
+import "./animate.css";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: false
+      menuOpen: false,
     };
   }
   componentDidMount() {
@@ -25,18 +28,19 @@ export default class App extends Component {
       offset: 0,
       align: "top",
       duration: 500,
-      ease: "inCirc"
+      ease: "inCirc",
     });
   }
   closeMenu() {
     this.setState({ menuOpen: false });
   }
   toggleMenu() {
-    this.setState(state => ({ menuOpen: !state.menuOpen }));
+    this.setState((state) => ({ menuOpen: !state.menuOpen }));
   }
   render() {
     return (
       <div id="App">
+        <Rain />
         <div>
           <Menu noOverlay pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <div>
@@ -47,7 +51,7 @@ export default class App extends Component {
                     offset: 0,
                     align: "top",
                     duration: 500,
-                    activeClass: "active"
+                    activeClass: "active",
                   })
                 }
               >
@@ -59,7 +63,7 @@ export default class App extends Component {
                   scrollToComponent(this.Projects, {
                     offset: 0,
                     align: "top",
-                    duration: 500
+                    duration: 500,
                   })
                 }
               >
@@ -71,7 +75,7 @@ export default class App extends Component {
                   scrollToComponent(this.Skills, {
                     offset: 0,
                     align: "top",
-                    duration: 500
+                    duration: 500,
                   })
                 }
               >
@@ -83,7 +87,7 @@ export default class App extends Component {
                   scrollToComponent(this.Contact, {
                     offset: 0,
                     align: "top",
-                    duration: 500
+                    duration: 500,
                   })
                 }
               >
@@ -94,9 +98,10 @@ export default class App extends Component {
         </div>
         <PageWrap>
           <Navbar />
+
           <Element name="AboutMe">
             <About
-              ref={section => {
+              ref={(section) => {
                 this.AboutMe = section;
               }}
             >
@@ -106,7 +111,7 @@ export default class App extends Component {
           <Element name="Projects">
             <section
               className="projects"
-              ref={section => {
+              ref={(section) => {
                 this.Projects = section;
               }}
             >
@@ -116,7 +121,7 @@ export default class App extends Component {
           <Element name="Skills">
             <section
               className="skills"
-              ref={section => {
+              ref={(section) => {
                 this.Skills = section;
               }}
             >
@@ -126,7 +131,7 @@ export default class App extends Component {
           <Element name="Contact">
             <section
               className="contact"
-              ref={section => {
+              ref={(section) => {
                 this.Contact = section;
               }}
             >
