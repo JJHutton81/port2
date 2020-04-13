@@ -11,8 +11,6 @@ import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
 import Navbar from "./components/nav/Navbar";
 
-import Rain from "./components/rain/Rain";
-
 import "./App.css";
 import "./animate.css";
 
@@ -40,8 +38,7 @@ export default class App extends Component {
   render() {
     return (
       <div id="App">
-        <Rain />
-        <div>
+        <div style={{display: "none"}}>
           <Menu noOverlay pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <div>
               <h1

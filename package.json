@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.10",
     "animate.css": "^3.7.2",
     "dom-css": "^2.1.0",
     "handlebars": "^4.3.0",

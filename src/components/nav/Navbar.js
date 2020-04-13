@@ -72,9 +72,6 @@ const Nav = styled.nav`
   background: black;
   position: fixed;
   z-index: 3;
-  @media (max-width: 700px) {
-    display: none;
-  }
 `
 
 const Div = styled.div`
