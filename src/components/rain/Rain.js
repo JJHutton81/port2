@@ -14,7 +14,7 @@ const Rain = () => {
         <span className="four"></span>
         <span className="five"></span>
         <span className="six"></span>
-        <span className="seven"></span>
+        <span className="three"></span>
         <span className="one"></span>
         <span className="two"></span>
         <span className="three"></span>
@@ -23,7 +23,7 @@ const Rain = () => {
         <span className="four"></span>
         <span className="five"></span>
         <span className="six"></span>
-        <span className="seven"></span>
+        <span className="one"></span>
         <span className="six"></span>
         <span className="five"></span>
         <span className="four"></span>
@@ -32,8 +32,8 @@ const Rain = () => {
         <span className="four"></span>
         <span className="five"></span>
         <span className="six"></span>
-        <span className="seven"></span>
-        <span className="one"></span>
+        <span className="five"></span>
+        <span className="three"></span>
       </div>
     </div>
   );

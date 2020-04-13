@@ -67,7 +67,7 @@ export default class Navbar extends Component {
 }
 
 const Nav = styled.nav`
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background: black;
   position: fixed;

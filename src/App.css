@@ -1,4 +1,6 @@
-
+#root {
+  overflow: hidden;
+}
 #App {
   background-image: url("./media/rain-drops.png");
   background-repeat: round;
