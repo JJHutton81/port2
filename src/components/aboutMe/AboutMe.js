@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
@@ -10,10 +10,6 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 
 import Rain from "../rain/Rain";
-
-import About from "../../media/aboutMeGraphic.png";
-import Headshot from "../../media/headshot.jpg";
-import Needle from "../../media/needle.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,10 +33,10 @@ const useStyles = makeStyles((theme) => ({
     zIndex: "3",
   },
   logo: {
-    height: "100px",
+    height: "150px",
     width: "80%",
-    maxWidth: "300px",
-    margin: "10px auto",
+    maxWidth: "500px",
+    margin: "15px auto",
   },
   img: {
     height: "300px",
