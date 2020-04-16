@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Link, scroller } from "react-scroll";
 import styled from "styled-components";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 
 import "../../App.css";
 
