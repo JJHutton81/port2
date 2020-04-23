@@ -13,9 +13,10 @@ export default class Navbar extends Component {
     scroller.scrollTo("scroll-to-element", {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart"
+      smooth: "easeInOutQuart",
     });
   }
+
   render() {
     return (
       <Nav>
@@ -71,12 +72,12 @@ export default class Navbar extends Component {
 }
 
 const Nav = styled.nav`
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background: black;
   position: fixed;
   z-index: 3;
-`
+`;
 
 const Div = styled.div`
   width: 100%;
@@ -84,4 +85,5 @@ const Div = styled.div`
   align-items: center;
   justify-content: space-evenly;
   display: flex;
+  color: white;
 `;
