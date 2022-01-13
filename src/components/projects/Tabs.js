@@ -10,7 +10,7 @@ const Tabs = props => {
   return (
     <Div>
       <Popup
-        trigger={<button className="Btnf">Filter By Category</button>}
+        trigger={<Button>Filter By Category</Button>}
         position="bottom center"
         on="hover"
         closeOnDocumentClick
@@ -58,6 +58,15 @@ const Categories = styled.div`
       cursor: pointer;
     }
   }
+`;
+
+const Button = styled.button`
+  height: 6vh;
+  width: 14vw;
+  font-size: 150%;
+  background-color: rgba(205, 205, 205, 0.6);
+  border: 2px solid rgba(205, 205, 205, 0.8);
+  border-radius: 5px;
 `;
 
 const Div = styled.div`

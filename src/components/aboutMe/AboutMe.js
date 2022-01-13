@@ -36,13 +36,17 @@ const useStyles = makeStyles((theme) => ({
     height: "150px",
     width: "80%",
     maxWidth: "500px",
-    margin: "15px auto",
   },
-  img: {
+  imgHeadShot: {
     height: "300px",
-    width: "50%",
-    maxWidth: "200px",
-    margin: "5px auto",
+    width: "100%",
+    maxWidth: "300px",
+  },
+  imgNeedle: {
+    height: "300px",
+    width: "150px",
+    maxWidth: "300px", 
+    display: "none",
   },
   card: {
     display: "flex",
@@ -50,14 +54,16 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     justifyContent: "center",
   },
-  cardWrap: {
-    width: "90%",
-    marginBottom: "20px",
-  },
   text: {
-    maxWidth: "400px",
     textAlign: "justify",
-  }
+    fontFamily: "Merriweather",
+    margin: "3vh",
+    lineHeight: "1.6",
+    fontWeight: "700",
+  },
+  titleText: {
+    fontFamily: "Merriweather",
+  },
 }));
 
 export default function AboutMe() {
@@ -67,7 +73,7 @@ export default function AboutMe() {
       <CssBaseline />
       <Rain />
       <Paper className={classes.title} elevation={3}>
-        <Typography>
+        <Typography className={classes.titleText}>
           Full-stack ReactJS developer with a background in graphic design and
           passion for all things front-end
         </Typography>
@@ -80,10 +86,15 @@ export default function AboutMe() {
       <Card className={classes.cardWrap}>
         <CardContent className={classes.card}>
           <CardMedia
-            className={classes.img}
+            className={classes.imgHeadShot}
             image={require("../../media/headshot.jpg")}
             title="James' Headshot"
           />
+          <CardMedia
+            className={classes.imgNeedle}
+            image={require("../../media/needle.png")}
+            title="The Space Needle"
+          /> 
           <Typography className={classes.text}>
             Hello and thank you for visiting my website. I started my journey as
             a classically trained artist. As I grew older, I found myself
@@ -96,11 +107,11 @@ export default function AboutMe() {
             animations and tricks that amplify the user experience. If you like
             what you see, hit me up. Let’s make something special together.{" "}
           </Typography>
-          <CardMedia
-            className={classes.img}
+          {/* <CardMedia
+            className={classes.imgNeedle}
             image={require("../../media/needle.png")}
             title="The Space Needle"
-          />
+          /> */}
         </CardContent>
       </Card>
     </Container>
